@@ -71,6 +71,7 @@ MVPリリース
 - 人気用語キャッシュ機能
   - DB保存 → 即時表示
   - API呼び出し回数の最適化
+
 ## 使用する技術スタック
 - Ruby on Rails 7.1.5 Ruby 3.2.6 (バックエンド)
 - JavaScript (フロントエンド)
@@ -79,3 +80,6 @@ MVPリリース
 - OpenAI (API)
 - PostgreSQL (DB)
 - Docker (環境構築)
+
+## 画面遷移図
+- [画面遷移図（Figma）] (https://www.figma.com/design/8WVZxTzZAwlwzfKY0MoGwV/%E7%84%A1%E9%A1%8C?node-id=0-1&t=YxwhpswlSKCxnMPF-1)
