@@ -95,4 +95,4 @@ MVPリリース
 - [画面遷移図（Figma）] (https://www.figma.com/design/8WVZxTzZAwlwzfKY0MoGwV/%E7%84%A1%E9%A1%8C?node-id=0-1&t=YxwhpswlSKCxnMPF-1)
 
 ## ER図
-[![Image from Gyazo](https://i.gyazo.com/61f7716911e9665198e52ccd7a7c6046.png)](https://gyazo.com/61f7716911e9665198e52ccd7a7c6046)
+[![Image from Gyazo](https://i.gyazo.com/12f8039a73fa6179474265005969bcad.png)](https://gyazo.com/12f8039a73fa6179474265005969bcad)
