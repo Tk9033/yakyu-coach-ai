@@ -1,0 +1,68 @@
+<!-- ロゴ -->
+<header class="text-center py-6">
+  <h1 class="text-3xl font-bold">yakyu-coach-ai</h1>
+</header>
+
+<!-- アプリの説明 -->
+<section class="bg-gray-100 py-10 text-center px-4">
+  <h2 class="text-2xl font-bold mb-4">野球用語をあなたの理解度に合わせてAIが解説します</h2>
+  <p class="text-gray-600 mb-6">初心者でも観戦がもっと楽しくなる学習アプリです。</p>
+
+  <%= link_to "使ってみる", "#" , class: "bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700" %>
+</section>
+
+<!-- 主な機能 -->
+<section class="py-10 px-4">
+  <h2 class="text-2xl font-bold text-center mb-8">主な機能</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- カード1 -->
+    <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
+      <h3 class="font-bold mb-2">用語検索</h3>
+      <p class="text-gray-600">野球用語を検索するとすぐにAIが解説します。</p>
+    </div>
+
+    <!-- カード2 -->
+    <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
+      <h3 class="font-bold mb-2">理解度別の説明</h3>
+      <p class="text-gray-600">初心者〜上級者まで、ぴったりのレベルで解説。</p>
+    </div>
+
+    <!-- カード3 -->
+    <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
+      <h3 class="font-bold mb-2">関連用語の提案</h3>
+      <p class="text-gray-600">学習を深める関連語も表示してくれます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 使い方 -->
+<section class="bg-gray-100 py-10 px-4">
+  <h2 class="text-2xl font-bold text-center mb-8">使い方</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="text-center">
+      <h3 class="font-bold mb-2">1. 理解度を選ぶ</h3>
+      <p class="text-gray-600">あなたの野球知識に合わせて解説の深さを変えます。</p>
+    </div>
+    <div class="text-center">
+      <h3 class="font-bold mb-2">2. 用語を検索する</h3>
+      <p class="text-gray-600">気になるワードを入力するだけ。</p>
+    </div>
+    <div class="text-center">
+      <h3 class="font-bold mb-2">3. AI が解説</h3>
+      <p class="text-gray-600">あなたに合わせた解説がすぐ届きます。</p>
+    </div>
+  </div>
+
+  <div class="text-center mt-8">
+    <%= link_to "使ってみる", "#" , class: "bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700" %>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer class="py-6 text-center text-gray-600">
+  <%= link_to "お問い合わせ", "#", class: "mx-2" %>
+  <%= link_to "利用規約", "#" , class: "mx-2" %>
+  <%= link_to "プライバシーポリシー", "#" , class: "mx-2" %>
+</footer>
