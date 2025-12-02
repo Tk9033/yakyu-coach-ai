@@ -1,0 +1,69 @@
+<div class="container mx-auto py-16">
+
+  <!-- タイトル -->
+  <div class="text-center mb-12">
+    <h1 class="text-3xl font-bold">あなたの理解度を選択してください</h1>
+  </div>
+
+  <!-- カード3つを中央に配置 -->
+  <div class="flex justify-center">
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- 初心者カード -->
+      <div class="card w-96 p-8 shadow hover:bg-blue-50 cursor-pointer relative" data-level="beginner">
+        <h3 class="font-bold text-2xl mb-4">初心者</h3>
+
+        <ul class="text-gray-700 space-y-1 mb-6">
+          <li>・野球の経験なし</li>
+          <li>・「アウト」「ストライク」など基本概念が曖昧</li>
+          <li>・専門用語なしで、例え話や基礎からの説明があると理解しやすい</li>
+        </ul>
+
+        <p class="text-gray-600 font-medium mb-14">基礎の基礎から知りたい人向け</p>
+
+        <!-- カード内の決定ボタン -->
+        <button
+          class="absolute bottom-6 right-6 bg-blue-600 text-white text-sm px-4 py-2 rounded-md shadow hover:bg-blue-700"
+        >
+          理解度を決定する
+        </button>
+      </div>
+
+      <!-- 中級者カード -->
+      <div class="card w-96 p-8 shadow hover:bg-blue-50 cursor-pointer relative" data-level="intermediate">
+        <h3 class="font-bold text-2xl mb-4">中級者</h3>
+        <ul class="text-gray-700 space-y-1 mb-3">
+          <li>・テレビやゲームで野球を楽しむことがある</li>
+          <li>・盗塁、四球、ホームランなど基本用語は理解している</li>
+          <li>・観戦ポイントや簡単な戦術補足があると嬉しい</li>
+        </ul>
+        <p class="text-gray-600 font-medium mb-14">基本はわかるけど、さらに深く楽しみたい人向け</p>
+
+        <button
+          class="absolute bottom-6 right-6 bg-blue-600 text-white text-sm px-4 py-2 rounded-md shadow hover:bg-blue-700"
+        >
+          理解度を決定する
+        </button>
+      </div>
+
+      <!-- 上級者カード -->
+      <div class="card w-96 p-8 shadow hover:bg-blue-50 cursor-pointer relative" data-level="advanced">
+        <h3 class="font-bold text-2xl mb-4">上級者</h3>
+        <ul class="text-gray-700 space-y-1 mb-3">
+          <li>・野球経験あり、または観戦が趣味</li>
+          <li>・戦術を理解している（エンドラン、バントシフトなど）</li>
+          <li>・チーム事情や戦略背景まで知りたい</li>
+        </ul>
+        <p class="text-gray-600 font-medium">プレーや戦術の“背景”まで理解したい人向け</p>
+
+        <button
+          class="absolute bottom-6 right-6 bg-blue-600 text-white text-sm px-4 py-2 rounded-md shadow hover:bg-blue-700"
+        >
+          理解度を決定する
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
