@@ -7,18 +7,15 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
   </head>
 
   <body>
     <%= render "shared/header" %>
-    <main class="container mx-auto mt-28 px-5">
 
+    <main class="container mx-auto mt-28 px-5">
       <%= yield %>
       <%= render "shared/footer" %>
-
     </main>
-
   </body>
 </html>
