@@ -6194,19 +6194,32 @@ window.Turbo = turbo_es2017_esm_exports;
 addEventListener("turbo:before-fetch-request", encodeMethodIntoRequestBody);
 
 // app/javascript/level_select.js
-console.log("=== application.js loaded ===");
+function showFlash(message) {
+  const flash = document.getElementById("flash-message");
+  if (!flash) return;
+  flash.textContent = message;
+  flash.classList.remove("hidden");
+}
+function levelLabel(level) {
+  switch (level) {
+    case "beginner":
+      return "\u521D\u5FC3\u8005";
+    case "intermediate":
+      return "\u4E2D\u7D1A\u8005";
+    case "advanced":
+      return "\u4E0A\u7D1A\u8005";
+    default:
+      return "";
+  }
+}
 document.addEventListener("turbo:load", () => {
-  console.log("level_select.js\u304C\u8AAD\u307F\u8FBC\u307E\u308C\u307E\u3057\u305F\uFF01");
-  const decideButtons = document.querySelectorAll(".decide-button");
-  decideButtons.forEach((button) => {
+  document.querySelectorAll(".decide-button").forEach((button) => {
     button.addEventListener("click", (event) => {
       const card = event.currentTarget.closest("[data-level]");
-      if (card) {
-        const level = card.dataset.level;
-        alert(`\u9078\u629E\u3055\u308C\u305F\u30EC\u30D9\u30EB: ${level}`);
-      } else {
-        alert("\u30A8\u30E9\u30FC: \u30AB\u30FC\u30C9\u8981\u7D20\u304C\u898B\u3064\u304B\u308A\u307E\u305B\u3093\u3067\u3057\u305F\u3002");
-      }
+      if (!card) return;
+      const level = card.dataset.level;
+      localStorage.setItem("selectedLevel", level);
+      showFlash(`\u7406\u89E3\u5EA6\u3092\u300C${levelLabel(level)}\u300D\u306B\u8A2D\u5B9A\u3057\u307E\u3057\u305F`);
     });
   });
 });

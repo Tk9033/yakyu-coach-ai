@@ -7831,3 +7831,329 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 3114)
 
 
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 192.168.65.1 at 2025-12-06 11:10:51 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js-9fd8462af45a4676062829906ed86272bcca7eb86ecf59a7dabbb057bf737f1d.map"):
+  
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 11:11:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 72)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 2443)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 2662)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 192.168.65.1 at 2025-12-06 11:11:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js-9fd8462af45a4676062829906ed86272bcca7eb86ecf59a7dabbb057bf737f1d.map"):
+  
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 11:11:04 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 72)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2428)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2647)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 192.168.65.1 at 2025-12-06 11:11:04 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js-9fd8462af45a4676062829906ed86272bcca7eb86ecf59a7dabbb057bf737f1d.map"):
+  
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 13:28:10 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/app/app/controllers/levels_controller.rb:14: syntax error, unexpected `end'):
+  
+app/controllers/levels_controller.rb:14: syntax error, unexpected `end'
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 13:28:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 162)
+  Rendered shared/_header.html.erb (Duration: 1.2ms | Allocations: 279)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 96)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 6453)
+Completed 200 OK in 52ms (Views: 49.5ms | ActiveRecord: 0.0ms | Allocations: 7324)
+
+
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 13:32:49 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/app/app/controllers/levels_controller.rb:7: syntax error, unexpected `return', expecting `then' or ';' or '\n'
+    if (!flash) return;
+                ^~~~~~
+/app/app/controllers/levels_controller.rb:13: syntax error, unexpected ';', expecting =>
+... flash.classList.add("hidden");
+...                              ^
+/app/app/controllers/levels_controller.rb:14: syntax error, unexpected '}', expecting `end' or dummy end
+    }, 3000);
+    ^
+/app/app/controllers/levels_controller.rb:15: syntax error, unexpected '}', expecting `end' or dummy end
+/app/app/controllers/levels_controller.rb:19: syntax error, unexpected ':', expecting `when'
+      case "beginner":
+                     ^
+/app/app/controllers/levels_controller.rb:21: syntax error, unexpected `case', expecting `when'
+      case "intermediate":
+      ^~~~
+/app/app/controllers/levels_controller.rb:23: syntax error, unexpected `case', expecting `when'
+      case "advanced":
+      ^~~~
+/app/app/controllers/levels_controller.rb:25: syntax error, unexpected local variable or method, expecting `when'
+      default:
+      ^~~~~~~
+/app/app/controllers/levels_controller.rb:27: syntax error, unexpected '}', expecting `when'
+    }
+    ^
+/app/app/controllers/levels_controller.rb:34: syntax error, unexpected `if', expecting `when'
+        if (!card) return;
+        ^~
+/app/app/controllers/levels_controller.rb:36: syntax error, unexpected local variable or method, expecting `when'
+        const level = card.dataset.level;
+        ^~~~~
+/app/app/controllers/levels_controller.rb:38: syntax error, unexpected local variable or method, expecting `when'
+        localStorage.setItem("selectedLevel", lev...
+        ^~~~~~~~~~~~
+/app/app/controllers/levels_controller.rb:39: syntax error, unexpected local variable or method, expecting `when'
+        showFlash(`理解度：「${levelLabel...
+        ^~~~~~~~~
+/app/app/controllers/levels_controller.rb:40: syntax error, unexpected '}', expecting `when'
+      });
+      ^
+/app/app/controllers/levels_controller.rb:41: syntax error, unexpected '}', expecting `when'
+    });
+    ^
+/app/app/controllers/levels_controller.rb:42: syntax error, unexpected '}', expecting `when'
+  });
+  ^
+/app/app/controllers/levels_controller.rb:43: syntax error, unexpected `end', expecting `when'):
+  
+app/controllers/levels_controller.rb:7: syntax error, unexpected `return', expecting `then' or ';' or '\n'
+app/controllers/levels_controller.rb:13: syntax error, unexpected ';', expecting =>
+app/controllers/levels_controller.rb:14: syntax error, unexpected '}', expecting `end' or dummy end
+app/controllers/levels_controller.rb:15: syntax error, unexpected '}', expecting `end' or dummy end
+app/controllers/levels_controller.rb:19: syntax error, unexpected ':', expecting `when'
+app/controllers/levels_controller.rb:21: syntax error, unexpected `case', expecting `when'
+app/controllers/levels_controller.rb:23: syntax error, unexpected `case', expecting `when'
+app/controllers/levels_controller.rb:25: syntax error, unexpected local variable or method, expecting `when'
+app/controllers/levels_controller.rb:27: syntax error, unexpected '}', expecting `when'
+app/controllers/levels_controller.rb:34: syntax error, unexpected `if', expecting `when'
+app/controllers/levels_controller.rb:36: syntax error, unexpected local variable or method, expecting `when'
+app/controllers/levels_controller.rb:38: syntax error, unexpected local variable or method, expecting `when'
+app/controllers/levels_controller.rb:39: syntax error, unexpected local variable or method, expecting `when'
+app/controllers/levels_controller.rb:40: syntax error, unexpected '}', expecting `when'
+app/controllers/levels_controller.rb:41: syntax error, unexpected '}', expecting `when'
+app/controllers/levels_controller.rb:42: syntax error, unexpected '}', expecting `when'
+app/controllers/levels_controller.rb:43: syntax error, unexpected `end', expecting `when'
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 14:54:22 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/app/app/controllers/levels_controller.rb:5: syntax error, unexpected end-of-input):
+  
+app/controllers/levels_controller.rb:5: syntax error, unexpected end-of-input
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 14:56:44 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/app/app/controllers/levels_controller.rb:5: syntax error, unexpected end-of-input):
+  
+app/controllers/levels_controller.rb:5: syntax error, unexpected end-of-input
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 14:56:45 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/app/app/controllers/levels_controller.rb:5: syntax error, unexpected end-of-input):
+  
+app/controllers/levels_controller.rb:5: syntax error, unexpected end-of-input
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 14:56:50 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/app/app/controllers/levels_controller.rb:5: syntax error, unexpected end-of-input):
+  
+app/controllers/levels_controller.rb:5: syntax error, unexpected end-of-input
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 14:57:15 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/app/app/controllers/levels_controller.rb:5: syntax error, unexpected end-of-input):
+  
+app/controllers/levels_controller.rb:5: syntax error, unexpected end-of-input
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 14:57:42 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/app/app/controllers/levels_controller.rb:5: syntax error, unexpected end-of-input):
+  
+app/controllers/levels_controller.rb:5: syntax error, unexpected end-of-input
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 14:59:25 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/app/app/controllers/levels_controller.rb:3: syntax error, unexpected end-of-input, expecting `end' or dummy end
+  end
+     ^
+):
+  
+app/controllers/levels_controller.rb:3: syntax error, unexpected end-of-input, expecting `end' or dummy end
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 14:59:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 169)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 330)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 96)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 289.5ms | Allocations: 45696)
+Completed 200 OK in 295ms (Views: 290.9ms | ActiveRecord: 0.0ms | Allocations: 47530)
+
+
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 16:18:45 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 165)
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 279)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 6451)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 7329)
+
+
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 17:22:53 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 161)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 279)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 105.7ms | Allocations: 23007)
+Completed 200 OK in 109ms (Views: 107.3ms | ActiveRecord: 0.0ms | Allocations: 23877)
+
+
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 17:23:05 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 72)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2497)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 2721)
+
+
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 17:23:12 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 72)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2494)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 2713)
+
+
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 17:25:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 161)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 279)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3646)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 4516)
+
+
+Started GET "/" for 192.168.65.1 at 2025-12-06 17:25:57 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 232)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2744)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3166)
+
+
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 17:26:06 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 72)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2497)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 2716)
+
+
+Started GET "/" for 192.168.65.1 at 2025-12-06 17:26:21 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 34)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 72)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2516)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 2735)
+
+
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 17:26:49 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 72)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 2494)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 2713)
+
+
+Started GET "/levels/new" for 192.168.65.1 at 2025-12-06 17:29:29 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 72)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 114.0ms | Allocations: 19228)
+Completed 200 OK in 117ms (Views: 116.0ms | ActiveRecord: 0.0ms | Allocations: 19447)
+
+
