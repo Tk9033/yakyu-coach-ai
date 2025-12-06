@@ -1,5 +1,3 @@
-// app/javascript/level_select.js
-
 function showFlash(message) {
     const flash = document.getElementById("flash-message");
     if (!flash) return;
