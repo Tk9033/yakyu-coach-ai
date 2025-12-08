@@ -23,7 +23,7 @@ function showFlash(message) {
   document.addEventListener("turbo:load", () => {
     const page = document.getElementById("level-select");
     if (!page) return;
-
+    //new か edit かを判定
     const mode = page.dataset.mode;
 
     document.querySelectorAll(".decide-button").forEach(button => {
@@ -32,6 +32,7 @@ function showFlash(message) {
         if (!card) return;
 
         const level = card.dataset.level;
+        //localstorageに保存
         localStorage.setItem("selectedLevel", level);
 
         // 文言切り替え
