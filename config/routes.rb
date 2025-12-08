@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'levels/new'
   get 'home/index'
+  get "levels/edit", to: "levels#edit", as: :edit_level
   resources :posts
   root 'home#index'
   resources :levels, only: [:new]
@@ -13,4 +13,3 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 end
-

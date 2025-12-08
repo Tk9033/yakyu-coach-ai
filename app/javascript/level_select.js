@@ -1,5 +1,3 @@
-// app/javascript/level_select.js
-
 function showFlash(message) {
     const flash = document.getElementById("flash-message");
     if (!flash) return;
@@ -23,15 +21,26 @@ function showFlash(message) {
   }
 
   document.addEventListener("turbo:load", () => {
+    const page = document.getElementById("level-select");
+    if (!page) return;
+
+    const mode = page.dataset.mode;
+
     document.querySelectorAll(".decide-button").forEach(button => {
       button.addEventListener("click", (event) => {
         const card = event.currentTarget.closest("[data-level]");
         if (!card) return;
 
         const level = card.dataset.level;
-
         localStorage.setItem("selectedLevel", level);
-        showFlash(`理解度を「${levelLabel(level)}」に設定しました`);
+
+        // 文言切り替え
+        const message =
+        mode === "edit"
+          ? `理解度を「${levelLabel(level)}」に変更しました`
+          : `理解度を「${levelLabel(level)}」に設定しました`;
+
+        showFlash(message);
       });
     });
   });
