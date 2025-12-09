@@ -1,0 +1,25 @@
+<% if @title.present? %>
+  <div class="card bg-base-200 mt-10 shadow">
+
+    <div class="card-body">
+
+      <!-- 解説タイトル -->
+      <h2 class="card-title text-lg">
+        <%= @title %>
+      </h2>
+
+      <!-- 説明文 -->
+      <p class="leading-relaxed text-base">
+        <%= @description %>
+      </p>
+
+      <!-- 補足（MVPでは非表示でもOK） -->
+      <% if @supplement.present? %>
+        <div class="mt-4 text-sm text-gray-500">
+          <%= @supplement %>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+<% end %>
