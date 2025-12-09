@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get 'home/index'
+  get "terms/index"
+
+  post "/terms/search", to: "terms#search", as: :terms_search
   get "levels/edit", to: "levels#edit", as: :edit_level
   resources :posts
   root 'home#index'
