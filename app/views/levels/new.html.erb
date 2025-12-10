@@ -33,7 +33,7 @@ levels = [
 ]
 %>
 
-<!-- 理解度選択 / 変更 共通コンテナ -->
+<!-- 理解度選択 / 変更 共通 -->
 <div id="level-select" data-mode="<%= @mode %>">
   <div class="container mx-auto py-16">
 
@@ -91,5 +91,20 @@ levels = [
 
       </div>
     </div>
+
+    <% if @mode == :edit %>
+      <div class="text-center mt-16">
+        <%= link_to terms_index_path,
+          class: "inline-flex items-center gap-2 text-blue-600 font-medium hover:text-blue-700 transition" do %>
+          検索画面へ進む
+          <svg xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 5l7 7-7 7" />
+          </svg>
+        <% end %>
+      </div>
+    <% end %>
   </div>
 </div>
