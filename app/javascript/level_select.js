@@ -34,6 +34,13 @@ function showFlash(message) {
         const level = card.dataset.level;
         localStorage.setItem("selectedLevel", level);
 
+        if (mode === "new") {
+            // ✅ 初回は自動で検索画面へ
+            window.location.href = "/terms/index";
+            return;
+        }
+
+
         // 文言切り替え
         const message =
         mode === "edit"

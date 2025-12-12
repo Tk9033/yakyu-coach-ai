@@ -6222,6 +6222,10 @@ document.addEventListener("turbo:load", () => {
       if (!card) return;
       const level = card.dataset.level;
       localStorage.setItem("selectedLevel", level);
+      if (mode === "new") {
+        window.location.href = "/terms/index";
+        return;
+      }
       const message = mode === "edit" ? `\u7406\u89E3\u5EA6\u3092\u300C${levelLabel(level)}\u300D\u306B\u5909\u66F4\u3057\u307E\u3057\u305F` : `\u7406\u89E3\u5EA6\u3092\u300C${levelLabel(level)}\u300D\u306B\u8A2D\u5B9A\u3057\u307E\u3057\u305F`;
       showFlash(message);
     });
