@@ -3,7 +3,6 @@ class TermsController < ApplicationController
   end
 
   def search
-    puts "★ search アクションが動きました"
     query = params[:query]
 
     # ★ ダミーの検索結果（AIなしで表示テスト用）
