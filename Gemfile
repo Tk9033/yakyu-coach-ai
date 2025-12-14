@@ -65,4 +65,4 @@ end
 
 gem "tailwindcss-rails"
 gem "jsbundling-rails"
-
+gem "ruby-openai"
