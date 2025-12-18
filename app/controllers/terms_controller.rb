@@ -1,4 +1,5 @@
 class TermsController < ApplicationController
+
   def index
   end
 
@@ -19,7 +20,7 @@ class TermsController < ApplicationController
 
     ai_text = response.dig("choices", 0, "message", "content")
 
-    # View に渡す形に整える（MVP では単純に text を渡せばOK）
+    # Viewに渡す
     @result = {
       title: query,
       description: ai_text,
