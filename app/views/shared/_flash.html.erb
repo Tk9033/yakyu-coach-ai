@@ -1,9 +1,11 @@
 <!-- フラッシュメッセージ -->
-<div
-  id="flash-message"
-  class="hidden w-full
-         bg-green-100 text-green-800
-         px-4 py-3 text-center
-         shadow"
->
-</div>
+<% flash.each do |type, message| %>
+  <div class="w-full
+              bg-green-100 text-green-800
+              px-4 py-3
+              text-center
+              shadow
+              mb-4">
+    <%= message %>
+  </div>
+<% end %>

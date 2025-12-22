@@ -5,26 +5,52 @@ class TermsController < ApplicationController
 
   def search
     query = params[:query]
+    level = session[:level] || params[:level] || "beginner"
 
+    # ガード処理
+    unless Ai::LevelDefinition.valid?(level)
+      level = "beginner"
+    end
+
+
+    session[:level] = level
+
+
+    # プロンプト生成
+    prompt = Ai::PromptBuilder.build(
+      word: query,
+      level: level
+    )
+
+
+    # ログ
+    Rails.logger.debug "=== level ==="
+    Rails.logger.debug level
+
+    Rails.logger.debug "=== prompt ==="
+    Rails.logger.debug prompt
+
+    # OpenAI API 呼び出し
     client = OpenAI::Client.new
 
     response = client.chat(
       parameters: {
         model: "gpt-4o-mini",
         messages: [
-          { role: "system", content: "野球用語を初心者〜上級者向けに説明するアシスタントです。" },
-          { role: "user", content: "#{query} をわかりやすく説明して" }
+          { role: "system", content: "あなたは野球用語を解説するアシスタントです。" },
+          { role: "user", content: prompt }
         ]
       }
     )
 
+    # AIの回答を取得
     ai_text = response.dig("choices", 0, "message", "content")
 
-    # Viewに渡す
+    # View に渡す
     @result = {
       title: query,
-      description: ai_text,
-      supplement: nil
+      level: level,
+      description: ai_text
     }
 
     render :index

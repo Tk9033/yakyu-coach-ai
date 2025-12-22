@@ -75,17 +75,20 @@ levels = [
             </p>
 
             <!-- 決定ボタン -->
-            <button
-              class="decide-button absolute bottom-6 right-6
-                     bg-blue-600 text-white text-sm px-4 py-2
-                     rounded-md shadow hover:bg-blue-700"
-            >
-              <% if @mode == :edit %>
-                この理解度に変更する
-              <% else %>
-                この理解度にする
+            <%= form_with url: level_path,method: :patch,local: true, data: { turbo: false } do %>
+              <%= button_tag type: "submit",
+                    name: "level",
+                    value: level[:key],
+                    class: "decide-button absolute bottom-6 right-6
+                          bg-blue-600 text-white text-sm px-4 py-2
+                          rounded-md shadow hover:bg-blue-700" do %>
+                <% if @mode == :edit %>
+                  この理解度に変更する
+                <% else %>
+                  この理解度にする
+                <% end %>
               <% end %>
-            </button>
+            <% end %>
           </div>
         <% end %>
 
@@ -94,9 +97,10 @@ levels = [
 
     <% if @mode == :edit %>
       <div class="text-center mt-16">
-        <%= link_to terms_index_path,
-          class: "inline-flex items-center gap-2 text-blue-600 font-medium hover:text-blue-700 transition" do %>
-          検索画面へ進む
+        <%= link_to terms_path,
+            data: { turbo: false },
+            class: "inline-flex items-center gap-2 text-blue-600 font-medium hover:text-blue-700 transition" do %>
+            検索画面へ進む
           <svg xmlns="http://www.w3.org/2000/svg"
               class="w-5 h-5"
               fill="none" viewBox="0 0 24 24" stroke="currentColor">
