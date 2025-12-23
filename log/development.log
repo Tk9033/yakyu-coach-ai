@@ -8998,3 +8998,2682 @@ Completed 200 OK in 10380ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 
 Completed 200 OK in 18777ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 9441)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-21 22:00:41 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 2.0ms | Allocations: 238)
+  Rendered terms/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1922)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 269)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 99)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 224.7ms | Allocations: 29423)
+Completed 200 OK in 5090ms (Views: 243.9ms | ActiveRecord: 0.0ms | Allocations: 36742)
+
+
+Started GET "/terms/search?query=%E3%83%95%E3%82%A9%E3%82%A2%E3%83%9C%E3%83%BC%E3%83%AB&button=" for 192.168.65.1 at 2025-12-21 22:01:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"フォアボール", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.2ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 710)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 3183)
+Completed 200 OK in 3670ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 5045)
+
+
+Started GET "/levels/edit" for 192.168.65.1 at 2025-12-21 22:01:45 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 722)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3232)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 3646)
+
+
+Started GET "/terms/index" for 192.168.65.1 at 2025-12-21 22:01:49 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 789)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3265)
+Completed 200 OK in 12ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 3497)
+
+
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-21 22:01:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 709)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 3183)
+Completed 200 OK in 3858ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 5039)
+
+
+Started GET "/levels/edit" for 192.168.65.1 at 2025-12-21 22:02:09 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 98)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2596)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 2806)
+
+
+Started GET "/terms/index" for 192.168.65.1 at 2025-12-21 22:02:11 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3267)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3486)
+
+
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-21 22:02:15 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 708)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 3193)
+Completed 200 OK in 4424ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 5123)
+
+
+Started GET "/levels/edit" for 192.168.65.1 at 2025-12-21 22:02:26 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 98)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2587)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2797)
+
+
+Started GET "/terms/index" for 192.168.65.1 at 2025-12-21 22:02:29 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3264)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 3483)
+
+
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-21 22:02:33 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 708)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3187)
+Completed 200 OK in 3982ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 5117)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-21 22:17:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 2.0ms | Allocations: 219)
+  Rendered terms/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1309)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 252)
+  Rendered shared/_flash.html.erb (Duration: 0.6ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 4734)
+Completed 200 OK in 4631ms (Views: 36.8ms | ActiveRecord: 0.0ms | Allocations: 7525)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-21 22:23:54 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.7ms | Allocations: 239)
+  Rendered terms/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1923)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 269)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 99)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 106.9ms | Allocations: 25440)
+Completed 200 OK in 6170ms (Views: 125.4ms | ActiveRecord: 0.0ms | Allocations: 32476)
+
+
+Started GET "/levels/edit" for 192.168.65.1 at 2025-12-21 22:25:21 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 722)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3226)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 3640)
+
+
+Started GET "/terms/index" for 192.168.65.1 at 2025-12-21 22:25:23 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 791)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3270)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 3502)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-21 22:25:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+Started GET "/" for 192.168.65.1 at 2025-12-21 22:25:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 265)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 2748)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 3171)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 708)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3178)
+Completed 200 OK in 3298ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 10734)
+
+
+Started GET "/" for 192.168.65.1 at 2025-12-21 22:26:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 63)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 2543)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms | Allocations: 2762)
+
+
+Started GET "/levels/edit" for 192.168.65.1 at 2025-12-21 22:26:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 98)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2579)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 2789)
+
+
+Started GET "/terms/index" for 192.168.65.1 at 2025-12-21 22:26:06 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 790)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3260)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 3481)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-21 22:26:13 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 708)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3193)
+Completed 200 OK in 2576ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 5107)
+
+
+Started GET "/levels/edit" for 192.168.65.1 at 2025-12-21 22:44:24 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 707)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 250)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4133)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 4996)
+
+
+Started GET "/terms/index" for 192.168.65.1 at 2025-12-21 22:44:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.7ms | Allocations: 214)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1425)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3925)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 4346)
+
+
+Started GET "/terms/search?level=beginner&query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-21 22:44:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+Started GET "/terms/search?level=beginner&query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-21 22:44:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 731)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3219)
+Completed 200 OK in 3520ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 5163)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 732)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3220)
+Completed 200 OK in 4903ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 12614)
+
+
+Started GET "/levels/edit" for 192.168.65.1 at 2025-12-21 22:44:54 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 98)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 2575)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 2785)
+
+
+Started GET "/terms/index" for 192.168.65.1 at 2025-12-21 22:44:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 816)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3289)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 3508)
+
+
+Started GET "/terms/search?level=beginner&query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-21 22:44:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 731)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 3207)
+Completed 200 OK in 3941ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 5170)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/terms/search?level=beginner&query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-22 19:52:33 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"盗塁", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：盗塁
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 1.1ms | Allocations: 238)
+  Rendered terms/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1973)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 267)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 99)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 92.1ms | Allocations: 23867)
+Completed 200 OK in 3973ms (Views: 121.6ms | ActiveRecord: 0.0ms | Allocations: 32258)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/terms/" for 192.168.65.1 at 2025-12-22 19:57:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/terms"):
+  
+Started GET "/terms/search?level=beginner&query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-22 19:57:41 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.9ms | Allocations: 228)
+  Rendered terms/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1684)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 262)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 99)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 85.2ms | Allocations: 23800)
+Completed 200 OK in 4742ms (Views: 95.7ms | ActiveRecord: 0.0ms | Allocations: 28771)
+
+
+Started GET "/terms/search?level=beginner&query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-22 19:58:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"盗塁", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：盗塁
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.2ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 731)
+  Rendered shared/_header.html.erb (Duration: 1.4ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 3023)
+Completed 200 OK in 4417ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 5210)
+
+
+Started GET "/terms/search?level=beginner&query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-22 20:08:04 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.2ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 731)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 3023)
+Completed 200 OK in 4385ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 5184)
+
+
+Started GET "/levels/edit" for 192.168.65.1 at 2025-12-22 20:08:15 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 721)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3226)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 3638)
+
+
+Started GET "/terms/index" for 192.168.65.1 at 2025-12-22 20:08:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 818)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3316)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3548)
+
+
+Started GET "/terms/search?level=beginner&query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-22 20:08:22 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 731)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 3025)
+Completed 200 OK in 4793ms (Views: 28.1ms | ActiveRecord: 0.0ms | Allocations: 5194)
+
+
+Started GET "/terms/search?level=beginner&query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-22 20:12:25 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"盗塁", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：盗塁
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.7ms | Allocations: 219)
+  Rendered terms/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 1436)
+  Rendered shared/_header.html.erb (Duration: 1.0ms | Allocations: 252)
+  Rendered shared/_flash.html.erb (Duration: 0.5ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 4685)
+Completed 200 OK in 4174ms (Views: 40.2ms | ActiveRecord: 0.0ms | Allocations: 7618)
+
+
+Started GET "/levels/edit" for 192.168.65.1 at 2025-12-22 20:12:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 681)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3165)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 3575)
+
+
+Started GET "/terms/index" for 192.168.65.1 at 2025-12-22 20:12:43 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 816)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 3308)
+Completed 200 OK in 30ms (Views: 30.2ms | ActiveRecord: 0.0ms | Allocations: 3530)
+
+
+Started GET "/terms/search?level=beginner&query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-22 20:12:48 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"盗塁", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：盗塁
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 732)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 3040)
+Completed 200 OK in 4097ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 5209)
+
+
+Started GET "/terms/search?level=beginner&query=%E3%83%95%E3%82%A9%E3%82%A2%E3%83%9C%E3%83%BC%E3%83%AB&button=" for 192.168.65.1 at 2025-12-22 20:13:17 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"フォアボール", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：フォアボール
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 731)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 3032)
+Completed 200 OK in 4187ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 5203)
+
+
+Started GET "/terms/search?level=beginner&query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-22 20:16:34 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 2.2ms | Allocations: 219)
+  Rendered terms/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1359)
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 252)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 4606)
+Completed 200 OK in 2900ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 7505)
+
+
+Started GET "/levels/edit" for 192.168.65.1 at 2025-12-22 20:16:41 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 681)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3183)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 3593)
+
+
+Started GET "/terms/index" for 192.168.65.1 at 2025-12-22 20:16:44 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 816)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3287)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 3509)
+
+
+Started GET "/terms/search?level=beginner&query=%E3%83%95%E3%82%A9%E3%82%A2%E3%83%9C%E3%83%BC%E3%83%AB&button=" for 192.168.65.1 at 2025-12-22 20:16:53 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"フォアボール", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：フォアボール
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 731)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3023)
+Completed 200 OK in 2320ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 5180)
+
+
+Started GET "/" for 192.168.65.1 at 2025-12-22 20:16:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 265)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2767)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 3189)
+
+
+Started GET "/terms/search?level=beginner&query=%E3%83%95%E3%82%A9%E3%82%A2%E3%83%9C%E3%83%BC%E3%83%AB&button=" for 192.168.65.1 at 2025-12-22 20:17:36 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"フォアボール", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：フォアボール
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 1.9ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 43.3ms | Allocations: 731)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 76.2ms | Allocations: 3023)
+Completed 200 OK in 3863ms (Views: 173.0ms | ActiveRecord: 0.0ms | Allocations: 5200)
+
+
+Started GET "/levels/edit" for 192.168.65.1 at 2025-12-22 20:17:48 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 98)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2588)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 2798)
+
+
+Started GET "/terms/index" for 192.168.65.1 at 2025-12-22 20:17:51 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 816)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3296)
+Completed 200 OK in 6ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 3515)
+
+
+Started GET "/terms/search?level=beginner&query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-22 20:17:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"盗塁", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：盗塁
+
+Started GET "/" for 192.168.65.1 at 2025-12-22 20:17:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 63)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2541)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 2760)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 731)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3023)
+Completed 200 OK in 2850ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 9800)
+
+
+Started GET "/levels/edit" for 192.168.65.1 at 2025-12-22 20:18:36 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 98)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2585)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 2795)
+
+
+Started GET "/terms/index" for 192.168.65.1 at 2025-12-22 20:18:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 816)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3299)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 3518)
+
+
+Started GET "/levels/edit" for 192.168.65.1 at 2025-12-22 20:27:04 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/levels/edit"):
+  
+Started GET "/terms/" for 192.168.65.1 at 2025-12-22 20:30:22 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1259)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1351)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2227)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `terms_search_path' for #<ActionView::Base:0x0000000001b508>):
+     5:   </p>
+     6: 
+     7:   <!-- 検索フォーム -->
+     8:   <%= form_with url: terms_search_path,
+     9:                 method: :get,
+    10:                 local: true,
+    11:                 data: { turbo: false } do |f| %>
+  
+app/views/terms/index.html.erb:8
+Started GET "/terms/" for 192.168.65.1 at 2025-12-22 20:31:47 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.4ms | Allocations: 215)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1388)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 252)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4847)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 5717)
+
+
+Started GET "/terms/search?level=beginner&query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-22 20:32:11 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.2ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 731)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 3023)
+Completed 200 OK in 3040ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 5428)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 20:32:20 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1556)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1648)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2045)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `terms_index_path' for #<ActionView::Base:0x0000000001ef50>):
+    94: 
+    95:     <% if @mode == :edit %>
+    96:       <div class="text-center mt-16">
+    97:         <%= link_to terms_index_path,
+    98:           class: "inline-flex items-center gap-2 text-blue-600 font-medium hover:text-blue-700 transition" do %>
+    99:           検索画面へ進む
+   100:           <svg xmlns="http://www.w3.org/2000/svg"
+  
+app/views/levels/new.html.erb:97
+app/controllers/levels_controller.rb:8:in `edit'
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 20:32:24 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1037)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1128)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1328)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `terms_index_path' for #<ActionView::Base:0x0000000001f0e0>):
+    94: 
+    95:     <% if @mode == :edit %>
+    96:       <div class="text-center mt-16">
+    97:         <%= link_to terms_index_path,
+    98:           class: "inline-flex items-center gap-2 text-blue-600 font-medium hover:text-blue-700 transition" do %>
+    99:           検索画面へ進む
+   100:           <svg xmlns="http://www.w3.org/2000/svg"
+  
+app/views/levels/new.html.erb:97
+app/controllers/levels_controller.rb:8:in `edit'
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 20:34:05 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 704)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 250)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4156)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 5015)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 20:34:11 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 1.4ms | Allocations: 214)
+  Rendered terms/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1422)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3914)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 4334)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 20:34:42 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 98)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 2579)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 2788)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 20:34:45 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 816)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3320)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 3538)
+
+
+Started GET "/" for 192.168.65.1 at 2025-12-22 20:34:46 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 259)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2746)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 3167)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 20:35:48 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 98)
+  Rendered shared/_header.html.erb (Duration: 1.3ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 2600)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 2809)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 20:35:51 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 816)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3293)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 3511)
+
+
+Started GET "/terms/search?level=beginner&query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-22 20:35:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 731)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3023)
+Completed 200 OK in 3225ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 6962)
+
+
+Started GET "/terms/search?level=beginner&query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-22 20:40:46 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"level"=>"beginner", "query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 1.9ms | Allocations: 219)
+  Rendered terms/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1311)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 252)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 4574)
+Completed 200 OK in 4635ms (Views: 34.2ms | ActiveRecord: 0.0ms | Allocations: 7561)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 20:40:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 681)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3186)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 3596)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 20:40:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3292)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 3514)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-22 20:40:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 708)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 3000)
+Completed 200 OK in 3024ms (Views: 71.2ms | ActiveRecord: 0.0ms | Allocations: 5097)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 20:41:23 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 98)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 2573)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 2783)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 20:41:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3271)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 3491)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-22 20:41:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+=== level ===
+beginner
+=== prompt ===
+あなたは野球初心者向けの解説者です。
+以下の用語について説明してください。
+
+【条件】
+・専門用語は使わない
+・基礎から説明する
+・日常的な例え話を使う
+
+【出力形式】
+1. 説明文（約100文字）
+2. 例え（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 708)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3000)
+Completed 200 OK in 3223ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 5088)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 20:51:42 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1441)
+  Rendered shared/_header.html.erb (Duration: 1.2ms | Allocations: 250)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4675)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 5537)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 20:51:44 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/terms
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 580)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 20:51:44 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.4ms | Allocations: 214)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1396)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3885)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 4352)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 20:51:46 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 689)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2981)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3191)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 20:51:47 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/terms
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 373)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 20:51:47 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3283)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 3505)
+
+
+Started GET "/" for 192.168.65.1 at 2025-12-22 20:51:49 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 259)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2755)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 3177)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 20:51:51 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 701)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2993)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 3203)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 20:51:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/terms
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 352)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 20:51:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3289)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 3511)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-22 20:53:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+=== level ===
+advanced
+=== prompt ===
+あなたは野球経験者向けの解説者です。
+
+【条件】
+・専門用語・戦術的視点を含める
+・プレーの背景や意図を説明する
+
+【出力形式】
+1. 説明文（約200文字）
+2. 戦術背景（約150文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 13)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 709)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 3001)
+Completed 200 OK in 5504ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 6855)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 20:53:16 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 698)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3006)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3217)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 20:53:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/terms
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 352)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 20:53:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 792)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3282)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 3505)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-22 20:53:20 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+=== level ===
+intermediate
+=== prompt ===
+あなたは野球観戦を楽しむ人向けの解説者です。
+
+【条件】
+・基本的な野球用語は使用可
+・観戦時の視点を含める
+
+【出力形式】
+1. 説明文（約150文字）
+2. 観戦ポイント（約100文字）
+
+用語：ストライク
+
+Started GET "/" for 192.168.65.1 at 2025-12-22 20:53:21 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 63)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2544)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 2763)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.2ms | Allocations: 13)
+  Rendered terms/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 709)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 3001)
+Completed 200 OK in 5413ms (Views: 34.2ms | ActiveRecord: 0.0ms | Allocations: 9875)
+
+
+Started GET "/" for 192.168.65.1 at 2025-12-22 20:57:37 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 63)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 2553)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 2772)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 20:57:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 695)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2987)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 3197)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 20:57:42 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/terms
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 20:57:42 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3292)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 3515)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:00:26 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 18.1ms | Allocations: 701)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 2993)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms | Allocations: 3203)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:00:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/terms
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 337)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 21:00:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3271)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3493)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:08:08 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 13.5ms | Allocations: 1411)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 250)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 4645)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms | Allocations: 5508)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:08:10 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 537)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:08:10 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 701)
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 21:08:13 +0900
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:08:15 +0900
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:08:18 +0900
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:08:18 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:16:41 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2942)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 270)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 99)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 80.5ms | Allocations: 24975)
+Completed 200 OK in 90ms (Views: 87.8ms | ActiveRecord: 0.0ms | Allocations: 28995)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:16:48 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 669)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:16:48 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 710)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3045)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3303)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:16:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 338)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:16:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 695)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2987)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 3202)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:16:53 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"beginner"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 362)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:16:53 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 716)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3008)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 3223)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:16:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:16:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 707)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3000)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 3215)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:16:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 353)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:16:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 692)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2984)
+Completed 200 OK in 7ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3197)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 21:16:57 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.4ms | Allocations: 222)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1658)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4171)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 4602)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:17:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 704)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2996)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3206)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:17:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 368)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:17:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 695)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2987)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3200)
+
+
+Started GET "/" for 192.168.65.1 at 2025-12-22 21:17:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 265)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2779)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3202)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:32:07 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 901)
+
+
+  
+NameError (undefined local variable or method `previous_level' for #<LevelsController:0x0000000000efb0>):
+  
+app/controllers/levels_controller.rb:27:in `update'
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:33:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 16.9ms | Allocations: 1419)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 250)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 4673)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms | Allocations: 5535)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:33:06 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 542)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:33:06 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 730)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3065)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3321)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:33:09 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 393)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:33:09 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 725)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3017)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 3230)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:34:24 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 731)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 3023)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 3233)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:34:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 400)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:34:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 708)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3000)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 3213)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:34:32 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 374)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:34:32 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 693)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2985)
+Completed 200 OK in 7ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3198)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:34:33 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 379)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:34:33 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 708)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3000)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 3213)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:34:34 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:34:34 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 713)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3005)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 3218)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:34:34 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 374)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:34:34 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 734)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3026)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 3239)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:34:35 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"beginner"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 397)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:34:35 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 725)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3017)
+Completed 200 OK in 7ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3230)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:40:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1454)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 250)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4687)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 5551)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:40:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 564)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:40:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 725)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3060)
+Completed 200 OK in 7ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3316)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:40:43 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 371)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:40:43 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 725)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3017)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 3230)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:42:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"beginner"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 371)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:42:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 728)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3020)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 3233)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:45:48 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1490)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 250)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 4740)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 5605)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:45:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 584)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:45:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 770)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 3062)
+Completed 200 OK in 22ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 3272)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:45:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 396)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:45:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 773)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3065)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3275)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:45:57 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 402)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:45:57 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 758)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3050)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3260)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:45:58 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 417)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:45:58 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 755)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3047)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3257)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 21:45:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"beginner"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 390)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 21:45:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 770)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3062)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 3272)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 22:01:50 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 602)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 22:01:50 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1480)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 250)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4713)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 5539)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 22:01:53 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 405)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 22:01:53 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 766)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3058)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3268)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 22:01:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"beginner"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 399)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 22:01:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3067)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3277)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 22:04:58 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 608)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 22:04:58 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1496)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 250)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 169)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4818)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 5648)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 22:05:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 363)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 22:05:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 766)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3085)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3295)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 22:05:04 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"beginner"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 360)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 22:05:04 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3081)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3292)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 22:05:50 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"beginner"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 369)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 22:05:50 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 758)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3063)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3273)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 22:05:51 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 366)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 22:05:51 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 778)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3083)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3293)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 22:05:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.6ms | Allocations: 214)
+  Rendered terms/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1298)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3815)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 4237)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-22 22:05:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+=== level ===
+intermediate
+=== prompt ===
+あなたは野球観戦を楽しむ人向けの解説者です。
+
+【条件】
+・基本的な野球用語は使用可
+・観戦時の視点を含める
+
+【出力形式】
+1. 説明文（約150文字）
+2. 観戦ポイント（約100文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 709)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3013)
+Completed 200 OK in 10717ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 6205)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 22:06:23 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 751)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3055)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 3265)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-22 22:06:25 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"advanced"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 354)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-22 22:06:25 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 763)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3068)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 3278)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-22 22:06:26 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3280)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 3499)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-22 22:06:29 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+=== level ===
+advanced
+=== prompt ===
+あなたは野球経験者向けの解説者です。
+
+【条件】
+・専門用語・戦術的視点を含める
+・プレーの背景や意図を説明する
+
+【出力形式】
+1. 説明文（約200文字）
+2. 戦術背景（約150文字）
+
+用語：ストライク
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 709)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3013)
+Completed 200 OK in 7171ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 5182)
+
+
