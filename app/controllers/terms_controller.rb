@@ -12,9 +12,7 @@ class TermsController < ApplicationController
       level = "beginner"
     end
 
-
     session[:level] = level
-
 
     # プロンプト生成
     prompt = Ai::PromptBuilder.build(
@@ -22,13 +20,6 @@ class TermsController < ApplicationController
       level: level
     )
 
-
-    # ログ
-    Rails.logger.debug "=== level ==="
-    Rails.logger.debug level
-
-    Rails.logger.debug "=== prompt ==="
-    Rails.logger.debug prompt
 
     # OpenAI API 呼び出し
     client = OpenAI::Client.new
