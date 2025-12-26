@@ -12119,3 +12119,118 @@ Processing by TermsController#search as HTML
 Completed 200 OK in 4410ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 5219)
 
 
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81" for 192.168.65.1 at 2025-12-26 20:24:53 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁"}
+OpenAI API error: テスト用エラー
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.5ms | Allocations: 98)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 213)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1537)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 252)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 163)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4868)
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 6474)
+
+
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81" for 192.168.65.1 at 2025-12-26 20:25:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁"}
+OpenAI API error: テスト用エラー
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 768)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3090)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 3859)
+
+
+Started GET "/terms/search?query=%E3%83%95%E3%82%A9%E3%82%A2%E3%83%9C%E3%83%BC%E3%83%AB" for 192.168.65.1 at 2025-12-26 20:25:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"フォアボール"}
+OpenAI API error: テスト用エラー
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 768)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3090)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 3865)
+
+
+Started GET "/" for 192.168.65.1 at 2025-12-26 20:35:58 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 284)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 250)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 163)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3817)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 4694)
+
+
+Started GET "/terms/search?query=%E3%83%95%E3%82%A9%E3%82%A2%E3%83%9C%E3%83%BC%E3%83%AB" for 192.168.65.1 at 2025-12-26 20:35:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"フォアボール"}
+OpenAI API error: テスト用エラー
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.4ms | Allocations: 97)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 213)
+  Rendered terms/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1576)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3911)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 5117)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF" for 192.168.65.1 at 2025-12-26 20:36:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク"}
+OpenAI API error: テスト用エラー
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 771)
+  Rendered shared/_header.html.erb (Duration: 1.5ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 3094)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 3899)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF" for 192.168.65.1 at 2025-12-26 20:36:11 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク"}
+OpenAI API error: テスト用エラー
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 772)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 3094)
+Completed 200 OK in 21ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 3866)
+
+
