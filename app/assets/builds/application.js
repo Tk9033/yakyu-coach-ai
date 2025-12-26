@@ -6194,41 +6194,37 @@ window.Turbo = turbo_es2017_esm_exports;
 addEventListener("turbo:before-fetch-request", encodeMethodIntoRequestBody);
 
 // app/javascript/level_select.js
-function showFlash(message) {
-  const flash = document.getElementById("flash-message");
-  if (!flash) return;
-  flash.textContent = message;
-  flash.classList.remove("hidden");
-}
-function levelLabel(level) {
-  switch (level) {
-    case "beginner":
-      return "\u521D\u5FC3\u8005";
-    case "intermediate":
-      return "\u4E2D\u7D1A\u8005";
-    case "advanced":
-      return "\u4E0A\u7D1A\u8005";
-    default:
-      return "";
-  }
-}
 document.addEventListener("turbo:load", () => {
   const page = document.getElementById("level-select");
   if (!page) return;
   const mode = page.dataset.mode;
   document.querySelectorAll(".decide-button").forEach((button) => {
-    button.addEventListener("click", (event) => {
-      const card = event.currentTarget.closest("[data-level]");
+    button.addEventListener("click", () => {
+      const card = button.closest("[data-level]");
       if (!card) return;
       const level = card.dataset.level;
-      localStorage.setItem("selectedLevel", level);
       if (mode === "new") {
-        window.location.href = "/terms/index";
+        localStorage.setItem("selectedLevel", level);
+        window.location.href = "/terms";
         return;
       }
-      const message = mode === "edit" ? `\u7406\u89E3\u5EA6\u3092\u300C${levelLabel(level)}\u300D\u306B\u5909\u66F4\u3057\u307E\u3057\u305F` : `\u7406\u89E3\u5EA6\u3092\u300C${levelLabel(level)}\u300D\u306B\u8A2D\u5B9A\u3057\u307E\u3057\u305F`;
-      showFlash(message);
     });
+  });
+});
+
+// app/javascript/loading.js
+document.addEventListener("turbo:load", () => {
+  const loading = document.getElementById("loading");
+  console.log("loading:", loading);
+  const form = document.querySelector("form");
+  console.log("form:", form);
+  if (!loading || !form) return;
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    loading.classList.remove("hidden");
+    setTimeout(() => {
+      form.submit();
+    }, 100);
   });
 });
 /*! Bundled license information:

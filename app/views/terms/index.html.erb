@@ -1,8 +1,18 @@
+<%= render "shared/loading" %>
+
 <div class="max-w-3xl mx-auto mt-32 px-4">
+
   <!-- 説明文 -->
   <p class="text-center text-base-content/80 font-medium mb-6">
     知りたい野球用語を入力してください
   </p>
+
+  <!--  エラーメッセージ -->
+  <% if @error_message.present? %>
+    <div class="alert alert-error mb-6">
+      <%= @error_message %>
+    </div>
+  <% end %>
 
   <!-- 検索フォーム -->
   <%= form_with url: search_terms_path,

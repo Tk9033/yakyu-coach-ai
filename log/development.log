@@ -11677,3 +11677,560 @@ advanced
 Completed 200 OK in 7171ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 5182)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-26 08:06:26 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.4ms | Allocations: 111)
+  Rendered terms/_result.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered terms/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2279)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 267)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 188)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 94.2ms | Allocations: 27586)
+Completed 200 OK in 4546ms (Views: 143.0ms | ActiveRecord: 0.0ms | Allocations: 40438)
+
+
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-26 08:11:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 2.9ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 3061)
+Completed 200 OK in 4640ms (Views: 33.1ms | ActiveRecord: 0.0ms | Allocations: 5186)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-26 08:11:08 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 3061)
+Completed 200 OK in 4126ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 5214)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-26 08:12:08 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.4ms | Allocations: 111)
+  Rendered terms/_result.html.erb (Duration: 0.5ms | Allocations: 227)
+  Rendered terms/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2154)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 269)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 188)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 86.1ms | Allocations: 23798)
+Completed 200 OK in 2978ms (Views: 101.7ms | ActiveRecord: 0.0ms | Allocations: 32044)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-26 08:12:15 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-26 08:12:16 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.4ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 777)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 3063)
+Completed 200 OK in 3121ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 8198)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 3061)
+Completed 200 OK in 4176ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 9314)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-26 08:15:34 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 3061)
+Completed 200 OK in 3636ms (Views: 30.4ms | ActiveRecord: 0.0ms | Allocations: 5176)
+
+
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-26 08:15:41 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 774)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 3061)
+Completed 200 OK in 3107ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 5133)
+
+
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-26 08:16:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 776)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 3062)
+Completed 200 OK in 3879ms (Views: 26.7ms | ActiveRecord: 0.0ms | Allocations: 5211)
+
+
+Started GET "/terms/search?query=%E3%83%95%E3%82%A9%E3%82%A2%E3%83%9C%E3%83%BC%E3%83%AB&button=" for 192.168.65.1 at 2025-12-26 08:17:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"フォアボール", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 774)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 3060)
+Completed 200 OK in 3701ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 5179)
+
+
+Started GET "/terms/search?query=%E3%83%95%E3%82%A9%E3%82%A2%E3%83%9C%E3%83%BC%E3%83%AB&button=" for 192.168.65.1 at 2025-12-26 08:18:08 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"フォアボール", "button"=>""}
+Started GET "/" for 192.168.65.1 at 2025-12-26 08:18:11 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 265)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 2768)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 3199)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3061)
+Completed 200 OK in 3265ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 12303)
+
+
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81&button=" for 192.168.65.1 at 2025-12-26 08:18:16 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3061)
+Completed 200 OK in 2970ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 5205)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-26 08:18:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3061)
+Completed 200 OK in 2974ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 5209)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-26 08:27:23 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.3ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 176.9ms | Allocations: 20996)
+Completed 200 OK in 14973ms (Views: 181.3ms | ActiveRecord: 0.0ms | Allocations: 23167)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF&button=" for 192.168.65.1 at 2025-12-26 08:27:43 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク", "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 3098)
+Completed 200 OK in 3168ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 5138)
+
+
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81" for 192.168.65.1 at 2025-12-26 08:28:54 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁"}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.2ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 3097)
+Completed 200 OK in 4136ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 5220)
+
+
+Started GET "/terms/search?query=%E3%83%95%E3%82%A9%E3%82%A2%E3%83%9C%E3%83%BC%E3%83%AB" for 192.168.65.1 at 2025-12-26 08:29:20 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"フォアボール"}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.2ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 777)
+  Rendered shared/_header.html.erb (Duration: 8.6ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 3115)
+Completed 200 OK in 3579ms (Views: 35.5ms | ActiveRecord: 0.0ms | Allocations: 5294)
+
+
+Started GET "/" for 192.168.65.1 at 2025-12-26 08:29:32 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2583)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 2803)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF" for 192.168.65.1 at 2025-12-26 08:29:49 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク"}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 776)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 3098)
+Completed 200 OK in 3101ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 5160)
+
+
+Started GET "/terms/search?query=%E3%83%95%E3%82%A9%E3%82%A2%E3%83%9C%E3%83%BC%E3%83%AB" for 192.168.65.1 at 2025-12-26 08:29:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"フォアボール"}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 3097)
+Completed 200 OK in 3307ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 5154)
+
+
+Started GET "/" for 192.168.65.1 at 2025-12-26 08:32:07 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 63)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 2574)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 2793)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF" for 192.168.65.1 at 2025-12-26 08:32:16 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク"}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 3098)
+Completed 200 OK in 3504ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 5227)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF" for 192.168.65.1 at 2025-12-26 08:32:39 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク"}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 776)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 3098)
+Completed 200 OK in 6303ms (Views: 29.8ms | ActiveRecord: 0.0ms | Allocations: 5230)
+
+
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81" for 192.168.65.1 at 2025-12-26 08:32:54 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁"}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.6ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 3097)
+Completed 200 OK in 3895ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 5252)
+
+
+Started GET "/" for 192.168.65.1 at 2025-12-26 08:33:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 63)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2577)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 2796)
+
+
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81" for 192.168.65.1 at 2025-12-26 08:33:57 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁"}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 107.7ms | Allocations: 19679)
+Completed 200 OK in 4046ms (Views: 110.6ms | ActiveRecord: 0.0ms | Allocations: 21807)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF" for 192.168.65.1 at 2025-12-26 08:34:04 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク"}
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 3097)
+Completed 200 OK in 4410ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 5219)
+
+
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81" for 192.168.65.1 at 2025-12-26 20:24:53 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁"}
+OpenAI API error: テスト用エラー
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.5ms | Allocations: 98)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 213)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1537)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 252)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 163)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4868)
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 6474)
+
+
+Started GET "/terms/search?query=%E7%9B%97%E5%A1%81" for 192.168.65.1 at 2025-12-26 20:25:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"盗塁"}
+OpenAI API error: テスト用エラー
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 768)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3090)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 3859)
+
+
+Started GET "/terms/search?query=%E3%83%95%E3%82%A9%E3%82%A2%E3%83%9C%E3%83%BC%E3%83%AB" for 192.168.65.1 at 2025-12-26 20:25:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"フォアボール"}
+OpenAI API error: テスト用エラー
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 768)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3090)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 3865)
+
+
+Started GET "/" for 192.168.65.1 at 2025-12-26 20:35:58 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 284)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 250)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 163)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3817)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 4694)
+
+
+Started GET "/terms/search?query=%E3%83%95%E3%82%A9%E3%82%A2%E3%83%9C%E3%83%BC%E3%83%AB" for 192.168.65.1 at 2025-12-26 20:35:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"フォアボール"}
+OpenAI API error: テスト用エラー
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.4ms | Allocations: 97)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 213)
+  Rendered terms/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1576)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3911)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 5117)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF" for 192.168.65.1 at 2025-12-26 20:36:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク"}
+OpenAI API error: テスト用エラー
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 771)
+  Rendered shared/_header.html.erb (Duration: 1.5ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 3094)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 3899)
+
+
+Started GET "/terms/search?query=%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF" for 192.168.65.1 at 2025-12-26 20:36:11 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ストライク"}
+OpenAI API error: テスト用エラー
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 772)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 3094)
+Completed 200 OK in 21ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 3866)
+
+
