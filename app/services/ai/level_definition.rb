@@ -53,5 +53,9 @@ module Ai
     def self.valid?(level)
       LEVELS.key?(level.to_sym)
     end
+
+    def self.label(level)
+      fetch(level)&.dig(:label) || "初心者"
+    end
   end
 end
