@@ -1,11 +1,19 @@
 <!-- フラッシュメッセージ -->
 <% flash.each do |type, message| %>
-  <div class="w-full
-              bg-green-100 text-green-800
-              px-4 py-3
-              text-center
-              shadow
-              mb-4">
+  <% base_classes = "w-full px-4 py-3 text-center shadow mb-4 rounded" %>
+
+  <% color_classes =
+      case type.to_sym
+      when :notice
+        "bg-green-100 text-green-800"
+      when :alert, :error
+        "bg-red-100 text-red-800"
+      else
+        "bg-gray-100 text-gray-800"
+      end
+  %>
+
+  <div class="<%= "#{base_classes} #{color_classes}" %>">
     <%= message %>
   </div>
 <% end %>
