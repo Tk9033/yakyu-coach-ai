@@ -1,5 +1,4 @@
 document.addEventListener("turbo:load", () => {
-
   const loading = document.getElementById("loading");
   console.log("loading:", loading);
 
@@ -11,7 +10,7 @@ document.addEventListener("turbo:load", () => {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    loading.classList.remove("hidden");
+    loading.classList.remove("loading-hidden");
 
     setTimeout(() => {
       form.submit();
