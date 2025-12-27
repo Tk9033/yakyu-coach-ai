@@ -12,9 +12,9 @@ class TermsController < ApplicationController
 
     # 空検索ガード
     if query.blank?
-  flash.now[:alert] = "検索する用語を入力してください"
-  return render :index
-end
+      flash.now[:alert] = "検索する用語を入力してください"
+      return render :index
+    end
 
     # プロンプト生成
     prompt = Ai::PromptBuilder.build(
