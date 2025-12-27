@@ -6221,7 +6221,7 @@ document.addEventListener("turbo:load", () => {
   if (!loading || !form) return;
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    loading.classList.remove("hidden");
+    loading.classList.remove("loading-hidden");
     setTimeout(() => {
       form.submit();
     }, 100);
