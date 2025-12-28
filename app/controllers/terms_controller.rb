@@ -12,9 +12,9 @@ class TermsController < ApplicationController
 
     # 空検索ガード
     if query.blank?
-  flash.now[:alert] = "検索する用語を入力してください"
-  return render :index
-end
+      flash.now[:alert] = "検索する用語を入力してください"
+      return render :index
+    end
 
     # プロンプト生成
     prompt = Ai::PromptBuilder.build(
@@ -29,13 +29,16 @@ end
         parameters: {
           model: "gpt-4o-mini",
           messages: [
-            { role: "system", content: "あなたは野球用語を解説するアシスタントです。" },
-            { role: "user", content: prompt }
-          ]
+  { role: "system", content: Ai::SystemPrompt::BASEBALL_TERM_GUARD },
+  { role: "user", content: prompt }
+]
         }
       )
 
       ai_text = response.dig("choices", 0, "message", "content")
+      Rails.logger.debug "==== AI TEXT START ===="
+      Rails.logger.debug ai_text.inspect
+      Rails.logger.debug "==== AI TEXT END ===="
 
       @result = {
         title: query,
