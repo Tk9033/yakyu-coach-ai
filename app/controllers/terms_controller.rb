@@ -29,13 +29,16 @@ class TermsController < ApplicationController
         parameters: {
           model: "gpt-4o-mini",
           messages: [
-            { role: "system", content: "あなたは野球用語を解説するアシスタントです。" },
-            { role: "user", content: prompt }
-          ]
+  { role: "system", content: Ai::SystemPrompt::BASEBALL_TERM_GUARD },
+  { role: "user", content: prompt }
+]
         }
       )
 
       ai_text = response.dig("choices", 0, "message", "content")
+      Rails.logger.debug "==== AI TEXT START ===="
+      Rails.logger.debug ai_text.inspect
+      Rails.logger.debug "==== AI TEXT END ===="
 
       @result = {
         title: query,
