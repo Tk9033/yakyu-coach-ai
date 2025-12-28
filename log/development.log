@@ -14967,3 +14967,673 @@ Processing by TermsController#search as HTML
 Completed 200 OK in 1400ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 5194)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/terms/search?query=%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC" for 192.168.65.1 at 2025-12-28 16:20:31 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"バッテリー"}
+Started GET "/" for 192.168.65.1 at 2025-12-28 16:20:36 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 491)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 357)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 267)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 158.2ms | Allocations: 25994)
+Completed 200 OK in 173ms (Views: 163.2ms | ActiveRecord: 0.0ms | Allocations: 29227)
+
+
+==== AI TEXT START ====
+"**バッテリーは、試合中にピッチャーとキャッチャーが協力してプレーを行う重要な役割です。**\n\n**バッテリーは、**ピッチャーと**キャッチャー**の組み合わせを指します。  \nこの二人は試合の中でとても重要な役割を果たします。  \n**ピッチャー**はボールを投げ、**キャッチャー**はそのボールを受けます。  \n彼らがどのように連携するかが試合の流れを左右します。  \n\n  \n例えば、料理をする時に**シェフ**と**アシスタント**が協力するようなものです。  \nシェフが料理を作り、アシスタントがそのサポートをします。  \nこの連携がうまくいくと、より良い料理が出来上がります。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.2ms | Allocations: 99)
+  Rendered terms/_result.html.erb (Duration: 0.4ms | Allocations: 183)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1838)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 75)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4181)
+Completed 200 OK in 5037ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 41971)
+
+
+Started GET "/" for 192.168.65.1 at 2025-12-28 16:20:36 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 63)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 75)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2590)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 2814)
+
+
+Started GET "/level/new" for 192.168.65.1 at 2025-12-28 16:20:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1473)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 76)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3806)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 4233)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-28 16:20:39 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"beginner"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 481)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-28 16:20:39 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 780)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 75)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3117)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 3328)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-28 16:20:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 864)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3384)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 3606)
+
+
+Started GET "/terms/search?query=%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC" for 192.168.65.1 at 2025-12-28 16:20:44 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"バッテリー"}
+==== AI TEXT START ====
+"**バッテリーは、試合中に投手と捕手がチームを支える役割を持つ二人のコンビです。**\n\n**バッテリー**は、**投手**と**捕手**の二人セットを指します。  \n投手はボールを投げ、捕手はそれを受け取ります。  \n二人が連携することで、試合の管理や戦略が生まれます。  \nこの関係は非常に重要で、互いの信頼が勝利に繋がります。  \n\nこのように、**バッテリー**はチームの心臓部です。  \n料理では、シェフと食材が一体となって美味しい料理を作ります。  \nこの仲間同士のうまく連携することが、大切です。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 3117)
+Completed 200 OK in 4952ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 5279)
+
+
+Started GET "/terms/search?query=%E3%83%99%E3%83%BC%E3%82%B9" for 192.168.65.1 at 2025-12-28 16:20:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ベース"}
+==== AI TEXT START ====
+"**ベースは、試合中に選手が進む目標となる場所で、チームが得点を取るための重要な要素です。**\n\n**ベース**は、フィールドに置かれた4つのマークです。  \n選手はボールを持たずに**ベース**の上を踏むことが必要です。  \nこれによって、得点をすることができます。  \n\n**ベース**を踏むことは、サッカーのゴールを目指すことに似ています。  \n選手がゴールに向かって走る姿を想像してください。  \nそれと同じように、**ベース**も選手が向かう目的地です。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 3117)
+Completed 200 OK in 3567ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 5274)
+
+
+Started GET "/terms/search?query=%E3%82%A2%E3%82%A6%E3%83%88" for 192.168.65.1 at 2025-12-28 16:21:07 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"アウト"}
+==== AI TEXT START ====
+"**野球では、試合中に選手が守備側によってできるだけ早く外に出されることを「**アウト**」と呼びます。**\n\n**アウト**は、攻撃側の選手が試合中に**守備側**によって**試合から外される**ことを指します。\n\n**アウト**が宣告されると、その選手はプレーを続けることができず、攻撃側の得点のチャンスが減ります。\n\n攻撃側には3回の**アウト**があった場合、そのイニングは終わります。\n\n \n\n友達と遊んでいるときに、**鬼ごっこ**で**捕まったら**その場から離れなければならない。**アウト**になると次のターンには参加できなくなる。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 3117)
+Completed 200 OK in 3624ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 5300)
+
+
+Started GET "/terms/search?query=%E3%83%9B%E3%83%BC%E3%83%A0" for 192.168.65.1 at 2025-12-28 16:21:29 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ホーム"}
+==== AI TEXT START ====
+"**野球では、選手が得点をするために、試合中に **ホーム** に到達する必要があります。**\n\n**ホーム** は得点をするための場所です。  \n選手は、**ホームベース** に触れることで1点が入ります。  \n試合の勝敗を決める重要な要素となります。  \n\n  \n例えば、テニスでポイントを取得するために、**ネット** を越えてボールを相手のコートに返すことに似ています。  \n勝負の行方が、選手の動きにかかっています。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3117)
+Completed 200 OK in 3490ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 5298)
+
+
+Started GET "/terms/search?query=%E3%82%BB%E3%83%BC%E3%83%95" for 192.168.65.1 at 2025-12-28 16:21:41 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"セーフ"}
+==== AI TEXT START ====
+"**試合中に、審判が選手がベースに到達したことを示すために「セーフ」とコールする。**\n\n**セーフ**は、選手が相手の打球を受けた選手よりも早く**ベース**に到達した状態を示します。  \nこの判断は、通常、審判によって行われます。  \n選手が**アウト**にならず、プレーを続けられることを意味します。\n\n  \n例えば、学校の**陸上競技**で、ゴールに先に到達したら「セーフ」と言って拍手をもらうようなものです。  \nまた、友達と遊ぶときに、誰かが鬼から逃げて**ライン**を越えたら「セーフ」と叫ぶことがあります。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 3117)
+Completed 200 OK in 5375ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 5289)
+
+
+Started GET "/terms/search?query=%E3%82%A2%E3%82%A6%E3%83%88" for 192.168.65.1 at 2025-12-28 16:21:53 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"アウト"}
+==== AI TEXT START ====
+"**アウトとは、試合中に選手がルールに従って場外に出されることです。**\n\n野球では、バッターや走者が **守備側の選手** によって捕まえられたり、いつも特定のルールに従ってプレーが止められることを指します。  \nこの状態になると、1人の選手がゲームから外れ、試合が続きます。  \nアウトが多いと、**攻撃側** のチームは得点を取るのが難しくなります。\n\n日常生活では、ゲームで **負ける** 時や、行動が **ルール違反** になって失敗した時に、何かを失う状況に例えられます。  \n例えば、ボードゲームで対戦相手に **負け** たり、学校でのルールに従わず注意を受けることです。  "
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3117)
+Completed 200 OK in 7394ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 5285)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-28 16:22:20 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 754)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 75)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3083)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 3293)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-28 16:22:22 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"intermediate"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 372)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-28 16:22:22 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 775)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 75)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3109)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 3319)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-28 16:22:23 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 863)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3368)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 3587)
+
+
+Started GET "/terms/search?query=%E3%82%A2%E3%82%A6%E3%83%88" for 192.168.65.1 at 2025-12-28 16:22:27 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"アウト"}
+==== AI TEXT START ====
+"**「アウト」とは、守備側が攻撃側の選手を**いつ**、**誰が**、**どのようにして**、プレーによって出塁を阻止することです。**\n\n試合中、攻撃側の選手が**塁に出ようとする**と、守備側はその選手を**アウトにする**ことを目指します。  \n選手が**三振**したり、**飛球を捕られたり**すると、**アウトが宣告**されます。  \n観戦時には、選手が塁に到達する前に**守備側がボールを受け取るか**、走者がタッチされるかを注目すると良いでしょう。  \nこのプレーは試合の流れを大きく変えるため、特に重要です。\n\nアウトの時に注目すべきポイントは、**攻撃側の選手がどのような作戦を立てているか**です。  \nまた、**守備側がどのように連携してアウトを取るか**にも注目してください。  \nこの瞬間が試合のカギを握ることがあります。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.3ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 3117)
+Completed 200 OK in 5624ms (Views: 32.1ms | ActiveRecord: 0.0ms | Allocations: 5296)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-28 16:23:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 748)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 75)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3077)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 3287)
+
+
+Started PATCH "/level" for 192.168.65.1 at 2025-12-28 16:23:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>"beginner"}
+Redirected to http://localhost:3000/level/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 354)
+
+
+Started GET "/level/edit" for 192.168.65.1 at 2025-12-28 16:23:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#edit as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 755)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 75)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3089)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 3299)
+
+
+Started GET "/terms" for 192.168.65.1 at 2025-12-28 16:23:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 863)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3386)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 3605)
+
+
+Started GET "/terms/search?query=%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC" for 192.168.65.1 at 2025-12-28 16:23:10 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"バッテリー"}
+==== AI TEXT START ====
+"**バッテリーは、ピッチャーとキャッチャーが一緒にチームを守るために行動することです。**\n\n**バッテリー**は、試合中にピッチャーとキャッチャーが連携してプレーします。  \nこの二人は、相手チームのバッターに対して攻撃を仕掛けます。  \nピッチャーはボールを投げ、キャッチャーはそのボールを受け取ります。  \n良い**バッテリー**の関係は、試合の結果に大きく影響します。  \n\n  \n\n**バッテリー**は、家で料理をする時のシェフと助手のようなものです。  \nシェフが料理を作り、助手が材料や道具を準備します。  \nこの二人がうまく連携すれば、美味しい料理が完成します。  \nそのため、しっかりとしたコミュニケーションが必要です。  "
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 790)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 3130)
+Completed 200 OK in 5557ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 5307)
+
+
+Started GET "/terms/search?query=%E3%83%9B%E3%83%BC%E3%83%A0" for 192.168.65.1 at 2025-12-28 16:23:49 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ホーム"}
+==== AI TEXT START ====
+"**ホームは、試合中に選手が最終的に目指す場所で、得点を決めるために使用されます。**\n\n**ホーム**は、バッターがヒットを打ち、他の選手が全ての基本となる位置を回って戻る場所です。  \n\n得点を得るためには、選手は**ホーム**に到達する必要があります。  \n\n**ホーム**は、試合の勝敗を左右する重要な地点です。  \n\n  \n\n家に帰ることを考えてみてください。  \n\n仕事や学校の後、皆さんは自分の家に帰ります。  \n\nそれが、野球の**ホーム**の役割に似ています。  "
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 3117)
+Completed 200 OK in 4134ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 5274)
+
+
+Started GET "/terms/search?query=%E3%83%99%E3%83%BC%E3%82%B9" for 192.168.65.1 at 2025-12-28 16:24:13 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ベース"}
+==== AI TEXT START ====
+"**野球では、選手が** **得点** **するために踏む地点を指します。**\n\n**ベース**は、プレイヤーが**走る**ための4つの地点のことです。\n\nこれらは、ホームプレート、ファースト、セカンド、サードの4か所です。\n\n選手は、これらを順番に**踏む**ことで**得点**を狙います。\n\nルールでは、アウトにならないように**守備側**が**プレイヤー**に当たりに行きます。\n\n選手が**ベース**を踏むことで、得点がチームに加算されます。\n\nこのように、**ベース**の役割は試合の進行にも大きな影響を与えます。\n\n---\n\n例えば、サッカーで選手が**ゴール**を目指すように、**野球**でも選手は**ベース**を目指して走ります。\n\nそれぞれの地点にたどり着くことで、チームに対する**貢献**ができます。\n\nまた、ビジネスでの**目標達成**にも似たプロセスがあります。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 2.5ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 22.2ms | Allocations: 789)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 3118)
+Completed 200 OK in 6163ms (Views: 33.9ms | ActiveRecord: 0.0ms | Allocations: 5283)
+
+
+Started GET "/terms/search?query=%E3%83%99%E3%83%BC%E3%82%B9" for 192.168.65.1 at 2025-12-28 16:24:28 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ベース"}
+==== AI TEXT START ====
+"**野球では、プレーヤーが得点を得るために走る **四角い**地点を「**ベース**」と呼びます。**\n\n**ベース**は、野球の試合で選手が走るべき重要な地点です。\n\n試合中、選手はボールを持つ相手から **逃げる**ために、**ベース**に触れる必要があります。\n\nこの一連の動作は得点につながり、チームにとって **勝利**の要素となります。\n\n \n\n例えば、**サッカー**ではゴールが得点のための場所ですが、野球の**ベース**も同様に **得点**に欠かせないスポットです。\n\nまた、**マラソン**では、選手が特定の地点を通過することが重要ですが、野球の**ベース**も同じくそれを目指します。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 3117)
+Completed 200 OK in 4632ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 5277)
+
+
+Started GET "/terms/search?query=%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC" for 192.168.65.1 at 2025-12-28 16:26:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"バッテリー"}
+==== AI TEXT START ====
+"**バッテリーとは、試合中に投げる人と受ける人の組み合わせを指します。**\n\n**バッテリー**は、**ピッチャー**と**キャッチャー**の二人から成り立っています。  \nこの二人が一緒に行動し、試合を進めます。  \n**ピッチャー**はボールを投げ、**キャッチャー**はそれを受け取ります。  \n彼らの連携が試合の成功に大きく影響します。  \n\n  \n例えば、家で料理をする時、**シェフ**と**アシスタント**のような関係です。  \n**シェフ**が料理を作り、**アシスタント**が手伝うことで、スムーズに進みます。  \nこのように、役割分担が大切なのです。  "
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.3ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 3117)
+Completed 200 OK in 5294ms (Views: 37.4ms | ActiveRecord: 0.0ms | Allocations: 5291)
+
+
+Started GET "/terms/search?query=%E3%83%9B%E3%83%BC%E3%83%A0" for 192.168.65.1 at 2025-12-28 16:27:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ホーム"}
+==== AI TEXT START ====
+"**ホームは、試合中に選手が得点を目指すために向かう地点です。**\n\n**ホーム**は、野球場の一番奥にある地点です。\n\nプレイヤーは、最後に**ホーム**に到達することで**得点**を得ます。\n\nバッターは、打った後に**一塁**、**二塁**、**三塁**を回り、最終的に**ホーム**へ帰ります。\n\n得点が入ると、チームにとっての**成功**となります。\n\n \n\n家に帰ることを考えてみてください。\n\n最終的に自宅にたどり着くことが目的です。\n\nその家が、あなたにとって**安心**や**勝利**を意味します。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3118)
+Completed 200 OK in 4579ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 5323)
+
+
+Started GET "/terms/search?query=%E3%83%99%E3%83%BC%E3%82%B9" for 192.168.65.1 at 2025-12-28 16:27:36 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ベース"}
+==== AI TEXT START ====
+"**ベースとは、試合中に選手が触れる特定の地点で、得点を上げるために必要な場所です。**\n\n**ベース**は、野球のフィールドに置かれている**四角い物体**です。  \n\n選手は、ベースに到達することで**進むこと**や**得点**を狙います。  \n\nこの物体は、ホーム、1塁、2塁、3塁の4つがあり、各ベースを回ることで得点に繋がります。  \n\n次に、ベースは陸上競技での**ゴール地点**のようなものです。  \n\n走者は、ゴールに向かって速く進み、そこで得点を得るイメージです。  \n\nまた、ゲームの進行にも大きく影響を与えます。  "
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 1.1ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 3117)
+Completed 200 OK in 3640ms (Views: 36.4ms | ActiveRecord: 0.0ms | Allocations: 5183)
+
+
+Started GET "/terms/search?query=%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC" for 192.168.65.1 at 2025-12-28 16:29:47 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"バッテリー"}
+==== AI TEXT START ====
+"**バッテリーとは、試合中にピッチャーとキャッチャーの組み合わせを指します。**\n\nバッテリーは、**ピッチャー**がボールを投げ、**キャッチャー**がそれを受ける役割を持つ選手たちです。  \nこの二人の連携が試合の結果に大きな影響を与えます。  \n特に、ピッチャーの投球スタイルに合わせたキャッチングが重要です。  \n\n日常的な例えとして、**料理人**と**助手**の組み合わせを考えてみてください。  \n料理人が指示を出し、助手がそれに従って作業を行う関係です。  \nそこでの連携が、料理の完成度に影響を与えます。  "
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.3ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.9ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 3117)
+Completed 200 OK in 3747ms (Views: 33.4ms | ActiveRecord: 0.0ms | Allocations: 5214)
+
+
+Started GET "/terms/search?query=%E3%82%A4%E3%83%8C" for 192.168.65.1 at 2025-12-28 16:32:17 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"イヌ"}
+==== AI TEXT START ====
+"このサービスは野球用語の解説に特化しています。野球用語を入力してください。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.3ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 3117)
+Completed 200 OK in 851ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 5180)
+
+
+Started GET "/terms/search?query=%E3%82%AA%E3%83%A0%E3%83%A9%E3%82%A4%E3%82%B9" for 192.168.65.1 at 2025-12-28 16:32:25 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"オムライス"}
+==== AI TEXT START ====
+"このサービスは野球用語の解説に特化しています。野球用語を入力してください。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3117)
+Completed 200 OK in 1125ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 5282)
+
+
+Started GET "/terms/search?query=%E7%94%B0%E4%B8%AD%E5%A4%AA%E9%83%8E" for 192.168.65.1 at 2025-12-28 16:32:37 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"田中太郎"}
+==== AI TEXT START ====
+"このサービスは野球用語の解説に特化しています。野球用語を入力してください。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 3117)
+Completed 200 OK in 993ms (Views: 29.0ms | ActiveRecord: 0.0ms | Allocations: 5209)
+
+
+Started GET "/terms/search?query=%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%96" for 192.168.65.1 at 2025-12-28 16:32:47 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"グローブ"}
+==== AI TEXT START ====
+"**グローブは、野球で選手がボールを捕まえるために使う道具です。**\n\n**グローブ**は、選手がボールを捕えるのを助けるために作られています。  \n通常、**皮や合成素材**でできており、手にはめて使います。  \n**投手や野手**はそれぞれ異なる形やサイズの**グローブ**を使います。  \n\n  \n日常では、**グローブ**の役割は手を保護するものや、物を持つための道具として使われます。  \n例えば、料理の時に熱い鍋を持つための**ミトン**や、作業で手を守るための**作業用手袋**などがあります。  "
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 3117)
+Completed 200 OK in 3988ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 5279)
+
+
+Started GET "/terms/search?query=%E3%83%A6%E3%83%8B%E3%83%9B%E3%83%BC%E3%83%A0" for 192.168.65.1 at 2025-12-28 16:32:57 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"ユニホーム"}
+==== AI TEXT START ====
+"**ユニホームは、野球選手が試合や練習で着用する特別な服である。**\n\n**ユニホーム**は、選手がチームの一員としての**アイデンティティ**を示すための重要な**衣服**です。  \n各チームにはそれぞれ異なるデザインや色の**ユニホーム**があり、ファンにも広く認知されています。  \n試合の時、選手たちはこの**ユニホーム**を着て、チームの**結束**を高めながらプレーします。  \n\n普段着と違って、特別な**ユニホーム**は学校の**制服**にも例えられます。  \n制服を着ることで、同じ学校の生徒であることを示し、お互いの**絆**が強まります。  \nスポーツチームの**ユニホーム**も同じで、チームの**一体感**が生まれます。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 3117)
+Completed 200 OK in 5040ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 5284)
+
+
+Started GET "/terms/search?query=%E6%89%8B%E8%A2%8B" for 192.168.65.1 at 2025-12-28 16:33:09 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"手袋"}
+==== AI TEXT START ====
+"このサービスは野球用語の解説に特化しています。野球用語を入力してください。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.7ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 3117)
+Completed 200 OK in 772ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 5196)
+
+
+Started GET "/terms/search?query=%E3%83%90%E3%83%83%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E6%89%8B%E8%A2%8B" for 192.168.65.1 at 2025-12-28 16:33:21 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"バッティング手袋"}
+==== AI TEXT START ====
+"**バッティング手袋は、バッターが打席に立つ際に使用する道具である。**\n\n**バッティング手袋**は、バッターがバットを握るときに手を守るためのものです。  \nこれを使うことで、手の滑りを防ぎ、いい打撃ができるようになります。  \n特に、バッターは力を入れてバットを振るので、手の保護が重要です。  \n\n  \n日常の例でいうと、滑りやすいものを持つときに使う**グローブ**のような存在です。  \n滑らないようにカバーをつけることで、より安全で快適に作業を行います。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 3117)
+Completed 200 OK in 4265ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 5228)
+
+
+Started GET "/terms/search?query=%E7%94%B2%E5%AD%90%E5%9C%92" for 192.168.65.1 at 2025-12-28 16:34:23 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"甲子園"}
+==== AI TEXT START ====
+"このサービスは野球用語の解説に特化しています。野球用語を入力してください。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.3ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 3117)
+Completed 200 OK in 856ms (Views: 29.6ms | ActiveRecord: 0.0ms | Allocations: 5206)
+
+
+Started GET "/terms/search?query=%E5%A4%A7%E8%B0%B7%E7%BF%94%E5%B9%B3" for 192.168.65.1 at 2025-12-28 16:34:47 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"大谷翔平"}
+==== AI TEXT START ====
+"このサービスは野球用語の解説に特化しています。野球用語を入力してください。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3117)
+Completed 200 OK in 1631ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 5195)
+
+
+Started GET "/terms/search?query=%E3%83%90%E3%83%83%E3%83%88" for 192.168.65.1 at 2025-12-28 16:35:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TermsController#search as HTML
+  Parameters: {"query"=>"バット"}
+==== AI TEXT START ====
+"**バットは、選手がボールを打つために使う器具で、試合中に選手が持ちます。**\n\n**バット**は主に木や金属で作られています。  \n選手は、**投手**から投げられたボールを**打つ**ために**バット**を振ります。  \nヒットを打つことで、**得点**のチャンスが生まれます。  \n\n  \n**バット**は、テニスのラケットのように打つための道具です。  \nラケットでボールを打つと、ポイントを取ることができます。  \nこのように、**バット**も試合で重要な役割を果たします。"
+==== AI TEXT END ====
+  Rendering layout layouts/application.html.erb
+  Rendering terms/index.html.erb within layouts/application
+  Rendered shared/_loading.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered terms/_result.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered terms/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 788)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 74)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 3117)
+Completed 200 OK in 3287ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 5305)
+
+
