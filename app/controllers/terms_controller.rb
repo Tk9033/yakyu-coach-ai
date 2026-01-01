@@ -29,29 +29,29 @@ class TermsController < ApplicationController
         parameters: {
           model: "gpt-4o-mini",
           messages: [
-  { role: "system", content: Ai::SystemPrompt::BASEBALL_TERM_GUARD },
-  { role: "user", content: prompt }
-]
+            { role: "system", content: Ai::SystemPrompt::BASEBALL_TERM_GUARD },
+            { role: "user", content: prompt }
+          ]
         }
       )
 
       ai_text = response.dig("choices", 0, "message", "content")
-      Rails.logger.debug "==== AI TEXT START ===="
-      Rails.logger.debug ai_text.inspect
-      Rails.logger.debug "==== AI TEXT END ===="
 
       @result = {
         title: query,
         level: level,
         description: ai_text
       }
-
     rescue OpenAI::Error => e
-      Rails.logger.error("OpenAI API error: #{e.message}")
+      Rails.logger.error(
+        "[OpenAI Error] type=#{e.class} message=#{e.message}"
+      )
       @error_message = "AIとの通信中にエラーが発生しました。しばらくしてから再度お試しください。"
 
     rescue StandardError => e
-      Rails.logger.error("Unexpected error: #{e.message}")
+      Rails.logger.error(
+        "[Unexpected Error] type=#{e.class} message=#{e.message}"
+      )
       @error_message = "予期せぬエラーが発生しました。"
     end
 

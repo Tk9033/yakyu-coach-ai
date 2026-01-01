@@ -1,35 +1,32 @@
 class LevelsController < ApplicationController
   def new
     @mode = :new
+    @levels = Ai::LevelUiDefinition.all
   end
 
   def edit
     @mode = :edit
+    @levels = Ai::LevelUiDefinition.all
     render :new
   end
 
   def update
     level = params[:level]
 
-    unless Ai::LevelDefinition.valid?(level)
-      level = "beginner"
-    end
+    level = "beginner" unless Ai::LevelDefinition.valid?(level)
 
     previous_level = session[:level]
     session[:level] = level
 
-    labels = {
-      "beginner" => "初心者",
-      "intermediate" => "中級者",
-      "advanced" => "上級者"
-    }
+    label = Ai::LevelDefinition.label(level)
 
     flash[:notice] =
       if previous_level.nil?
-        "理解度を「#{labels[level]}」に設定しました"
+        "理解度を「#{label}」に設定しました"
       else
-        "理解度を「#{labels[level]}」に変更しました"
+        "理解度を「#{label}」に変更しました"
       end
+
     redirect_to edit_level_path
   end
 end
