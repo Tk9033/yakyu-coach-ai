@@ -11,9 +11,7 @@ class LevelsController < ApplicationController
   def update
     level = params[:level]
 
-    unless Ai::LevelDefinition.valid?(level)
-      level = "beginner"
-    end
+    level = "beginner" unless Ai::LevelDefinition.valid?(level)
 
     previous_level = session[:level]
     session[:level] = level
@@ -22,10 +20,11 @@ class LevelsController < ApplicationController
 
     flash[:notice] =
       if previous_level.nil?
-        "理解度を「#{labels[level]}」に設定しました"
+        "理解度を「#{label}」に設定しました"
       else
-        "理解度を「#{labels[level]}」に変更しました"
+        "理解度を「#{label}」に変更しました"
       end
+
     redirect_to edit_level_path
   end
 end
