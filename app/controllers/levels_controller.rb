@@ -18,11 +18,7 @@ class LevelsController < ApplicationController
     previous_level = session[:level]
     session[:level] = level
 
-    labels = {
-      "beginner" => "初心者",
-      "intermediate" => "中級者",
-      "advanced" => "上級者"
-    }
+    label = Ai::LevelDefinition.label(level)
 
     flash[:notice] =
       if previous_level.nil?
