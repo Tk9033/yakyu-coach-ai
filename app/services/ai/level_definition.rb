@@ -57,5 +57,16 @@ module Ai
     def self.label(level)
       fetch(level)&.dig(:label) || "初心者"
     end
+
+    def self.all_for_view
+      LEVELS.map do |key, data|
+        {
+          key: key,
+          label: data[:label],
+          descriptions: data.dig(:ui, :descriptions),
+          note: data.dig(:ui, :note)
+        }
+      end
+    end
   end
 end

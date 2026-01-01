@@ -1,10 +1,12 @@
 class LevelsController < ApplicationController
   def new
     @mode = :new
+    @levels = Ai::LevelUiDefinition.all
   end
 
   def edit
     @mode = :edit
+    @levels = Ai::LevelUiDefinition.all
     render :new
   end
 
