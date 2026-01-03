@@ -5,11 +5,7 @@
     <!-- タイトル -->
     <div class="text-center mb-12">
       <h1 class="text-3xl font-bold">
-        <% if @mode == :edit %>
-          理解度を変更してください
-        <% else %>
-          あなたの理解度を選択してください
-        <% end %>
+        <%= t("levels.title.#{@mode}") %>
       </h1>
     </div>
 
@@ -61,12 +57,7 @@
                       transition
                     " do %>
 
-                <% if @mode == :edit %>
-                  この理解度に変更する
-                <% else %>
-                  この理解度にする
-                <% end %>
-
+                <%= t("levels.title.#{@mode}") %>
               <% end %>
             <% end %>
           </div>
@@ -87,7 +78,7 @@
               hover:bg-blue-700
               transition
             " do %>
-          検索画面へ進む
+          <%= t("levels.link.to_terms") %>
           <svg xmlns="http://www.w3.org/2000/svg"
               class="w-5 h-5"
               fill="none" viewBox="0 0 24 24" stroke="currentColor">
