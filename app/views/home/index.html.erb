@@ -5,10 +5,10 @@
 
 <!-- アプリの説明 -->
 <section class="bg-gray-100 py-10 text-center px-4">
-  <h2 class="text-2xl font-bold mb-4">野球用語をあなたの理解度に合わせてAIが解説します</h2>
-  <p class="text-gray-600 mb-6">初心者でも観戦がもっと楽しくなる学習アプリです。</p>
+  <h2 class="text-2xl font-bold mb-4"><%= t("home.hero.title") %></h2>
+  <p class="text-gray-600 mb-6"><%= t("home.hero.subtitle") %></p>
 
-  <%= link_to "使ってみる", new_level_path , class: "bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700" %>
+  <%= link_to t("home.hero.cta"), new_level_path , class: "bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700" %>
 </section>
 
 <!-- 主な機能 -->

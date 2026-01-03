@@ -18,6 +18,7 @@ module App
 
     config.autoload_paths << Rails.root.join("app/services")
     config.eager_load_paths << Rails.root.join("app/services")
+    config.i18n.default_locale = :ja
 
     # Configuration for the application, engines, and railties goes here.
     #
