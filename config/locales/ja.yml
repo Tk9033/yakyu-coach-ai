@@ -16,3 +16,18 @@ ja:
 
     link:
       to_terms: "検索画面へ進む"
+
+  header:
+    nav:
+      level: "理解度選択"
+      home: "トップに戻る"
+      how_to: "使い方"
+    level_label: "理解度"
+
+  footer:
+    contact: "お問い合わせ"
+    terms: "利用規約"
+    privacy: "プライバシーポリシー"
+
+  loading:
+    generating: "AIが解説を生成中です…"
