@@ -13,7 +13,6 @@ document.addEventListener("turbo:load", () => {
 
       const level = card.dataset.level;
 
-      // hidden input に詰める
       input.value = level;
 
       // Controller に送る
