@@ -17,6 +17,10 @@ ja:
     link:
       to_terms: "検索画面へ進む"
 
+    flash:
+      set: "理解度を「%{label}」に設定しました"
+      change: "理解度を「%{label}」に変更しました"
+
   header:
     nav:
       level: "理解度選択"
@@ -31,3 +35,7 @@ ja:
 
   loading:
     generating: "AIが解説を生成中です…"
+
+  terms:
+    hint: "知りたい野球用語を入力してください"
+    placeholder: "野球用語を検索..."
