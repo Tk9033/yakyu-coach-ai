@@ -5,14 +5,39 @@ ja:
       subtitle: "初心者でも観戦がもっと楽しくなる学習アプリです。"
       cta: "使ってみる"
 
+    features:
+      title: "主な機能"
+      search:
+        title: "用語検索"
+        description: "野球用語を検索するとすぐにAIが解説します。"
+      level:
+        title: "理解度別の説明"
+        description: "初心者〜上級者まで、ぴったりのレベルで解説。"
+      related:
+        title: "関連用語の提案"
+        description: "学習を深める関連語も表示してくれます。"
+
+    how_to:
+      title: "使い方"
+      step1:
+        title: "1. 理解度を選ぶ"
+        description: "あなたの野球知識に合わせて解説の深さを変えます。"
+      step2:
+        title: "2. 用語を検索する"
+        description: "気になるワードを入力するだけ。"
+      step3:
+        title: "3. AI が解説"
+        description: "あなたに合わせた解説がすぐ届きます。"
+      cta: "使ってみる"
+
   levels:
     title:
       new: "あなたの理解度を選択してください"
       edit: "理解度を変更してください"
 
     button:
-      select: "理解度を変更してください"
-      change: "この理解度に変更する"
+      new: "この理解度にする"
+      edit: "この理解度に変更する"
 
     link:
       to_terms: "検索画面へ進む"
@@ -39,3 +64,10 @@ ja:
   terms:
     hint: "知りたい野球用語を入力してください"
     placeholder: "野球用語を検索..."
+
+    flash:
+      blank: "検索する用語を入力してください"
+
+    error:
+      openai: "AIとの通信中にエラーが発生しました。しばらくしてから再度お試しください。"
+      unexpected: "予期せぬエラーが発生しました。"

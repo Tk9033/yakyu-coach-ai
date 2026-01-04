@@ -13,49 +13,49 @@
 
 <!-- 主な機能 -->
 <section class="py-10 px-4">
-  <h2 class="text-2xl font-bold text-center mb-8">主な機能</h2>
+  <h2 class="text-2xl font-bold text-center mb-8"><%= t("home.features.title") %></h2>
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     <!-- カード1 -->
     <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
-      <h3 class="font-bold mb-2">用語検索</h3>
-      <p class="text-gray-600">野球用語を検索するとすぐにAIが解説します。</p>
+      <h3 class="font-bold mb-2"><%= t("home.features.search.title") %></h3>
+      <p class="text-gray-600"><%= t("home.features.search.description") %></p>
     </div>
 
     <!-- カード2 -->
     <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
-      <h3 class="font-bold mb-2">理解度別の説明</h3>
-      <p class="text-gray-600">初心者〜上級者まで、ぴったりのレベルで解説。</p>
+      <h3 class="font-bold mb-2"><%= t("home.features.level.title") %></h3>
+      <p class="text-gray-600"><%= t("home.features.level.description") %></p>
     </div>
 
     <!-- カード3 -->
     <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
-      <h3 class="font-bold mb-2">関連用語の提案</h3>
-      <p class="text-gray-600">学習を深める関連語も表示してくれます。</p>
+      <h3 class="font-bold mb-2"><%= t("home.features.related.title") %></h3>
+      <p class="text-gray-600"><%= t("home.features.related.description") %></p>
     </div>
   </div>
 </section>
 
 <!-- 使い方 -->
 <section class="bg-gray-100 py-10 px-4">
-  <h2 class="text-2xl font-bold text-center mb-8">使い方</h2>
+  <h2 class="text-2xl font-bold text-center mb-8"><%= t("home.how_to.title") %></h2>
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     <div class="text-center">
-      <h3 class="font-bold mb-2">1. 理解度を選ぶ</h3>
-      <p class="text-gray-600">あなたの野球知識に合わせて解説の深さを変えます。</p>
+      <h3 class="font-bold mb-2"><%= t("home.how_to.step1.title") %></h3>
+      <p class="text-gray-600"><%= t("home.how_to.step1.description") %></p>
     </div>
     <div class="text-center">
-      <h3 class="font-bold mb-2">2. 用語を検索する</h3>
-      <p class="text-gray-600">気になるワードを入力するだけ。</p>
+      <h3 class="font-bold mb-2"><%= t("home.how_to.step2.title") %></h3>
+      <p class="text-gray-600"><%= t("home.how_to.step2.description") %></p>
     </div>
     <div class="text-center">
-      <h3 class="font-bold mb-2">3. AI が解説</h3>
-      <p class="text-gray-600">あなたに合わせた解説がすぐ届きます。</p>
+      <h3 class="font-bold mb-2"><%= t("home.how_to.step3.title") %></h3>
+      <p class="text-gray-600"><%= t("home.how_to.step3.description") %></p>
     </div>
   </div>
 
   <div class="text-center mt-8">
-    <%= link_to "使ってみる", new_level_path , class: "bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700" %>
+    <%= link_to t("home.how_to.cta"), new_level_path , class: "bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700" %>
   </div>
 </section>
