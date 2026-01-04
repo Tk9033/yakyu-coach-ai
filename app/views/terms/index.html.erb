@@ -4,7 +4,7 @@
 
   <!-- 説明文 -->
   <p class="text-center text-lg font-semibold text-base-content/80 mb-6">
-    知りたい野球用語を入力してください
+    <%= t("terms.hint") %>
   </p>
 
   <!-- 検索フォーム -->
@@ -43,7 +43,7 @@
       <!-- 入力欄 -->
       <%= f.text_field :query,
             value: params[:query],
-            placeholder: "野球用語を検索...",
+            placeholder: t("terms.placeholder"),
             class: "
               w-full
               bg-transparent

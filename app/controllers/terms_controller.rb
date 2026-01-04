@@ -12,7 +12,7 @@ class TermsController < ApplicationController
 
     # 空検索ガード
     if query.blank?
-      flash.now[:alert] = "検索する用語を入力してください"
+      flash.now[:alert] = t("terms.flash.blank")
       return render :index
     end
 
@@ -46,13 +46,12 @@ class TermsController < ApplicationController
       Rails.logger.error(
         "[OpenAI Error] type=#{e.class} message=#{e.message}"
       )
-      @error_message = "AIとの通信中にエラーが発生しました。しばらくしてから再度お試しください。"
-
+      @error_message = t("terms.error.openai")
     rescue StandardError => e
       Rails.logger.error(
         "[Unexpected Error] type=#{e.class} message=#{e.message}"
       )
-      @error_message = "予期せぬエラーが発生しました。"
+      @error_message = t("terms.error.unexpected")
     end
 
     render :index

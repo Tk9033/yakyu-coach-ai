@@ -22,9 +22,9 @@ class LevelsController < ApplicationController
 
     flash[:notice] =
       if previous_level.nil?
-        "理解度を「#{label}」に設定しました"
+        t("levels.flash.set", label: label)
       else
-        "理解度を「#{label}」に変更しました"
+        t("levels.flash.change", label: label)
       end
 
     redirect_to edit_level_path

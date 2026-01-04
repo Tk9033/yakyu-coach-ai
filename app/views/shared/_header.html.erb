@@ -10,9 +10,9 @@
 
       <!-- 右：メニュー -->
       <nav class="hidden md:flex gap-8 text-gray-700 font-medium">
-        <%= link_to "理解度選択", edit_level_path %>
-        <%= link_to "トップに戻る", root_path %>
-        <%#<%= link_to "使い方", "#" %>
+        <%= link_to t("header.nav.level"), edit_level_path %>
+        <%= link_to t("header.nav.home"), root_path %>
+        <%= link_to t("header.nav.how_to"), "#" %>
       </nav>
 
     </div>
@@ -21,7 +21,7 @@
     <% if session[:level].present? %>
       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
                   text-lg font-semibold text-gray-800">
-        理解度：<%= Ai::LevelDefinition.label(session[:level]) %>
+      <%= t("header.level_label") %>：<%= Ai::LevelDefinition.label(session[:level]) %>
       </div>
     <% end %>
 
