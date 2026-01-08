@@ -34,6 +34,23 @@ module Ai
       - 1文につき太字は最大2か所まで
     PROMPT
 
+    COMMON_RELATED_TERMS_RULE = <<~PROMPT.freeze
+      ---
+      以下はシステム用の出力です。
+      ここから下は **JSONのみ** を出力してください。
+      文章や補足説明は一切書かないでください。
+
+      【関連用語ルール】
+      - 上記の用語と直接関係する野球用語を **3個挙げる（不可能な場合は出力しない）**
+      - 野球用語以外は含めない
+      - 表記は日本語の正式名称にする
+
+      出力形式：
+      {
+        "related_terms": ["用語1", "用語2", "用語3"]
+      }
+    PROMPT
+
     def self.beginner_prompt(word)
       <<~PROMPT
         あなたは野球初心者向けの解説者です。
@@ -56,6 +73,8 @@ module Ai
         #{COMMON_EMPHASIS_RULES}
 
         用語：#{word}
+
+        #{COMMON_RELATED_TERMS_RULE}
       PROMPT
     end
 
@@ -83,6 +102,8 @@ module Ai
         #{COMMON_EMPHASIS_RULES}
 
         用語：#{word}
+
+        #{COMMON_RELATED_TERMS_RULE}
       PROMPT
     end
 
@@ -110,6 +131,8 @@ module Ai
         #{COMMON_EMPHASIS_RULES}
 
         用語：#{word}
+
+        #{COMMON_RELATED_TERMS_RULE}
       PROMPT
     end
   end
