@@ -11,5 +11,28 @@
       <%= markdown(@result[:description]) %>
     </div>
 
+    <!-- 関連用語 -->
+    <% if @result[:related_terms].present? %>
+      <div class="mt-10">
+        <h3 class="text-sm font-semibold text-base-content/70 mb-3">
+          関連用語
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+          <% @result[:related_terms].each do |term| %>
+            <%= link_to term,
+                  search_terms_path(query: term),
+                  class: "
+                    px-4 py-2
+                    rounded-full
+                    bg-base-100
+                    text-sm
+                    hover:bg-base-300
+                    transition
+                  " %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
   </div>
 <% end %>

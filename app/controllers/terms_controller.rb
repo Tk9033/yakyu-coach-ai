@@ -35,29 +35,29 @@ class TermsController < ApplicationController
         }
       )
 
-      ai_text = response.dig("choices", 0, "message", "content")
+      ai_text = response.dig("choices", 0, "message", "content").to_s
 
-      body, json_part = ai_text.to_s.split("---", 2)
-
-      description = body.strip
       related_terms = []
 
-      if json_part.present?
+      json_regex = /\{\s*"related_terms"\s*:\s*\[[\s\S]*?\]\s*\}/
+
+      if (match = ai_text.match(json_regex))
         begin
-          parsed = JSON.parse(json_part)
+          parsed = JSON.parse(match[0])
           terms = parsed["related_terms"]
           related_terms = terms.is_a?(Array) ? terms : []
         rescue JSON::ParserError => e
-          Rails.logger.warn(
-            "[RelatedTerms Parse Error] message=#{e.message}"
-          )
+          Rails.logger.warn("[RelatedTerms Parse Error] #{e.message}")
         end
       end
+
+      description = ai_text.gsub(json_regex, "").strip
 
       @result = {
         title: query,
         level: level,
-        description: ai_text
+        description: description,
+        related_terms: related_terms
       }
     rescue OpenAI::Error => e
       Rails.logger.error(
