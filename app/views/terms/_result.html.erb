@@ -20,16 +20,20 @@
 
         <div class="flex flex-wrap gap-3">
           <% @result[:related_terms].each do |term| %>
-            <%= link_to term,
-                  search_terms_path(query: term),
-                  class: "
-                    px-4 py-2
-                    rounded-full
-                    bg-base-100
-                    text-sm
-                    hover:bg-base-300
-                    transition
-                  " %>
+            <button
+              type="button"
+              data-related-term="<%= term %>"
+              class="
+                js-related-term
+                px-4 py-2
+                rounded-full
+                bg-base-100
+                text-sm
+                hover:bg-base-300
+                transition
+              ">
+              <%= term %>
+            </button>
           <% end %>
         </div>
       </div>

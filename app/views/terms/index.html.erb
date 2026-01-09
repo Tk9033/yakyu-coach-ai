@@ -42,6 +42,7 @@
 
       <!-- 入力欄 -->
       <%= f.text_field :query,
+            id: "search-input",
             value: params[:query],
             placeholder: t("terms.placeholder"),
             class: "
