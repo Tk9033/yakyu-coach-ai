@@ -6230,12 +6230,17 @@ document.addEventListener("turbo:load", () => {
 // app/javascript/related_terms.js
 document.addEventListener("turbo:load", () => {
   const input = document.getElementById("search-input");
-  if (!input) return;
+  const hint = document.getElementById("search-hint");
+  if (!input || !hint) return;
   document.addEventListener("click", (event) => {
     const btn = event.target.closest(".js-related-term");
     if (!btn) return;
-    input.value = btn.dataset.relatedTerm;
+    const term = btn.dataset.relatedTerm;
+    input.value = term;
     input.focus();
+    const template = hint.dataset.template;
+    hint.textContent = template.replace("__TERM__", term);
+    hint.classList.remove("hidden");
   });
 });
 /*! Bundled license information:
