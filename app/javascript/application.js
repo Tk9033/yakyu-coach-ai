@@ -2,3 +2,4 @@
 import "@hotwired/turbo-rails"
 import "./level_select"
 import "./loading"
+import "./related_terms"

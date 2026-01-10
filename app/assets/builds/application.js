@@ -6197,17 +6197,16 @@ addEventListener("turbo:before-fetch-request", encodeMethodIntoRequestBody);
 document.addEventListener("turbo:load", () => {
   const page = document.getElementById("level-select");
   if (!page) return;
-  const mode = page.dataset.mode;
+  const form = document.getElementById("level-form");
+  const input = document.getElementById("level-input");
+  if (!form || !input) return;
   document.querySelectorAll(".decide-button").forEach((button) => {
     button.addEventListener("click", () => {
       const card = button.closest("[data-level]");
       if (!card) return;
       const level = card.dataset.level;
-      if (mode === "new") {
-        localStorage.setItem("selectedLevel", level);
-        window.location.href = "/terms";
-        return;
-      }
+      input.value = level;
+      form.submit();
     });
   });
 });
@@ -6225,6 +6224,23 @@ document.addEventListener("turbo:load", () => {
     setTimeout(() => {
       form.submit();
     }, 100);
+  });
+});
+
+// app/javascript/related_terms.js
+document.addEventListener("turbo:load", () => {
+  const input = document.getElementById("search-input");
+  const hint = document.getElementById("search-hint");
+  if (!input || !hint) return;
+  document.addEventListener("click", (event) => {
+    const btn = event.target.closest(".js-related-term");
+    if (!btn) return;
+    const term = btn.dataset.relatedTerm;
+    input.value = term;
+    input.focus();
+    const template = hint.dataset.template;
+    hint.textContent = template.replace("__TERM__", term);
+    hint.classList.remove("hidden");
   });
 });
 /*! Bundled license information:
