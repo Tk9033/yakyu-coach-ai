@@ -67,3 +67,7 @@ gem "tailwindcss-rails"
 gem "jsbundling-rails"
 gem "ruby-openai"
 gem "redcarpet"
+
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
