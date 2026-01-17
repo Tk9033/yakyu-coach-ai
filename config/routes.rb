@@ -10,5 +10,8 @@ Rails.application.routes.draw do
 
   resource :level, only: [:new, :edit, :update]
 
+  get '/auth/:provider/callback', to: 'sessions#omniauth'
+  get '/auth/failure', to: redirect('/')
+
   get "up" => "rails/health#show", as: :rails_health_check
 end
