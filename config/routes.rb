@@ -1,16 +1,15 @@
 Rails.application.routes.draw do
-  get 'sessions/omniauth'
   devise_for :users
+
   root "home#index"
 
   resources :terms, only: [:index] do
-    collection do
-      get :search
-    end
+    collection { get :search }
   end
 
   resource :level, only: [:new, :edit, :update]
 
+  # OmniAuth callback だけを書く
   get '/auth/:provider/callback', to: 'sessions#omniauth'
   get '/auth/failure', to: redirect('/')
 

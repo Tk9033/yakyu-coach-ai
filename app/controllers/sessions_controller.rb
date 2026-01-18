@@ -1,4 +1,10 @@
 class SessionsController < ApplicationController
+
+  def passthru
+    # OmniAuth middleware に処理を委ねるため何もしない
+    head :not_found
+  end
+
   def omniauth
     auth = request.env['omniauth.auth']
 

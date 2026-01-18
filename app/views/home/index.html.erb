@@ -1,3 +1,9 @@
+<form action="/users/auth/google_oauth2" method="post" data-turbo="false">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <button type="submit">
+    Googleでログイン
+  </button>
+</form>
 <!-- ロゴ -->
 <header class="text-center py-6">
   <h1 class="text-3xl font-bold">yakyu-coach-ai</h1>
@@ -58,4 +64,5 @@
   <div class="text-center mt-8">
     <%= link_to t("home.how_to.cta"), new_level_path , class: "bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700" %>
   </div>
+
 </section>
