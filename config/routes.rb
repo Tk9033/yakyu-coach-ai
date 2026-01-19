@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: {
+    omniauth_callbacks: "users/omniauth_callbacks"
+  }
+
   root "home#index"
 
   resources :terms, only: [:index] do
-    collection do
-      get :search
-    end
+    collection { get :search }
   end
 
   resource :level, only: [:new, :edit, :update]
