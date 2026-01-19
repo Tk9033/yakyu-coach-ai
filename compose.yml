@@ -30,6 +30,8 @@ services:
 
     environment:
       TZ: Asia/Tokyo
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
     ports:
       - "3000:3000"
     depends_on:
