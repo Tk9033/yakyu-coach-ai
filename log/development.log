@@ -22692,3 +22692,96 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 3972)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 192.168.65.1 at 2026-01-21 12:55:58 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1260)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:11
+  Rendered shared/_header.html.erb (Duration: 44.6ms | Allocations: 16018)
+  Rendered shared/_flash.html.erb (Duration: 1.7ms | Allocations: 266)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 260)
+  Rendered layout layouts/application.html.erb (Duration: 256.5ms | Allocations: 47615)
+Completed 200 OK in 275ms (Views: 254.2ms | ActiveRecord: 5.2ms | Allocations: 53363)
+
+
+Started GET "/contact" for 192.168.65.1 at 2026-01-21 12:56:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.3ms | Allocations: 106)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:11
+  Rendered shared/_header.html.erb (Duration: 1.6ms | Allocations: 832)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3526)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 3974)
+
+
+Started GET "/" for 192.168.65.1 at 2026-01-21 12:56:14 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 347)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:11
+  Rendered shared/_header.html.erb (Duration: 3.1ms | Allocations: 809)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3675)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.3ms | Allocations: 3899)
+
+
+Started GET "/contact" for 192.168.65.1 at 2026-01-21 15:17:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.7ms | Allocations: 105)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:11
+  Rendered shared/_header.html.erb (Duration: 12.2ms | Allocations: 5525)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 233)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 9054)
+Completed 200 OK in 30ms (Views: 20.1ms | ActiveRecord: 4.6ms | Allocations: 10733)
+
+
+Started GET "/contact" for 192.168.65.1 at 2026-01-21 15:18:05 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:11
+  Rendered shared/_header.html.erb (Duration: 4.4ms | Allocations: 811)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3336)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.6ms | Allocations: 3558)
+
+
+Started GET "/contact" for 192.168.65.1 at 2026-01-21 15:18:33 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.8ms | Allocations: 105)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:11
+  Rendered shared/_header.html.erb (Duration: 9.1ms | Allocations: 5513)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 233)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 9060)
+Completed 200 OK in 25ms (Views: 17.3ms | ActiveRecord: 3.6ms | Allocations: 10740)
+
+

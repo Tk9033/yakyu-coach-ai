@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'pages/contact'
   devise_for :users, controllers: {
     omniauth_callbacks: "users/omniauth_callbacks"
   }
@@ -12,4 +13,6 @@ Rails.application.routes.draw do
   resource :level, only: [:new, :edit, :update]
 
   get "up" => "rails/health#show", as: :rails_health_check
+
+  get "/contact", to: "pages#contact"
 end
