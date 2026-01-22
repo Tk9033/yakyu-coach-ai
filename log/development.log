@@ -22785,3 +22785,246 @@ Processing by PagesController#contact as HTML
 Completed 200 OK in 25ms (Views: 17.3ms | ActiveRecord: 3.6ms | Allocations: 10740)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 192.168.65.1 at 2026-01-21 22:37:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1260)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:11
+  Rendered shared/_header.html.erb (Duration: 35.0ms | Allocations: 16034)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 266)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 260)
+  Rendered layout layouts/application.html.erb (Duration: 85.2ms | Allocations: 41824)
+Completed 200 OK in 96ms (Views: 76.9ms | ActiveRecord: 10.7ms | Allocations: 47136)
+
+
+Started DELETE "/users/sign_out" for 192.168.65.1 at 2026-01-21 22:37:58 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 27ms (ActiveRecord: 0.2ms | Allocations: 2845)
+
+
+Started GET "/" for 192.168.65.1 at 2026-01-21 22:37:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 348)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 233)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 25)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3123)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3351)
+
+
+Started GET "/google-icon.svg" for 192.168.65.1 at 2026-01-21 22:37:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/google-icon.svg"):
+  
+Started GET "/users/auth/google_oauth2" for 192.168.65.1 at 2026-01-21 22:37:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=88f5efba651272cc283ed461c934faf07afaf6712af8f7ac&code=4%2F0ASc3gC20G9np4kDf1WVGZBZJlwFNDhIX9r9CFCx9leRpoG6OiZ5QLx-mDog8xoChleX_uQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 192.168.65.1 at 2026-01-21 22:38:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"88f5efba651272cc283ed461c934faf07afaf6712af8f7ac", "code"=>"4/0ASc3gC20G9np4kDf1WVGZBZJlwFNDhIX9r9CFCx9leRpoG6OiZ5QLx-mDog8xoChleX_uQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "google_oauth2"], ["uid", "109216097957485973878"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1012)
+
+
+Started GET "/" for 192.168.65.1 at 2026-01-21 22:38:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 348)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:11
+  Rendered shared/_header.html.erb (Duration: 1.6ms | Allocations: 798)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3729)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 3952)
+
+
+Started DELETE "/users/sign_out" for 192.168.65.1 at 2026-01-21 22:38:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 5ms (ActiveRecord: 0.4ms | Allocations: 1716)
+
+
+Started GET "/" for 192.168.65.1 at 2026-01-21 22:38:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 348)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 136)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2999)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3221)
+
+
+Started GET "/google-icon.svg" for 192.168.65.1 at 2026-01-21 22:38:02 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/google-icon.svg"):
+  
+Started GET "/users/auth/google_oauth2" for 192.168.65.1 at 2026-01-21 22:38:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=df33ff016d6912ab458b29ab6b348eb41ba876a6f63217a3&code=4%2F0ASc3gC3mBi-TLbL_yK0HUgKk3Id-ZAPuEm_MWSYP8tQRnaA7i1yJn6rhuSArFAtJ4h3cVg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 192.168.65.1 at 2026-01-21 22:38:04 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"df33ff016d6912ab458b29ab6b348eb41ba876a6f63217a3", "code"=>"4/0ASc3gC3mBi-TLbL_yK0HUgKk3Id-ZAPuEm_MWSYP8tQRnaA7i1yJn6rhuSArFAtJ4h3cVg", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "google_oauth2"], ["uid", "109216097957485973878"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms | Allocations: 794)
+
+
+Started GET "/" for 192.168.65.1 at 2026-01-21 22:38:04 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 348)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:11
+  Rendered shared/_header.html.erb (Duration: 2.4ms | Allocations: 798)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3699)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.3ms | Allocations: 3922)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 192.168.65.1 at 2026-01-22 15:25:34 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1260)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:11
+  Rendered shared/_header.html.erb (Duration: 29.9ms | Allocations: 16020)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 266)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 260)
+  Rendered layout layouts/application.html.erb (Duration: 377.3ms | Allocations: 55117)
+Completed 200 OK in 391ms (Views: 375.2ms | ActiveRecord: 4.8ms | Allocations: 60426)
+
+
+Started DELETE "/users/sign_out" for 192.168.65.1 at 2026-01-22 15:25:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 9ms (ActiveRecord: 0.4ms | Allocations: 2828)
+
+
+Started GET "/" for 192.168.65.1 at 2026-01-22 15:25:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 348)
+  Rendered shared/_header.html.erb (Duration: 1.0ms | Allocations: 233)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3108)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 3335)
+
+
+Started GET "/google-icon.svg" for 192.168.65.1 at 2026-01-22 15:25:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/google-icon.svg"):
+  
+Started GET "/users/auth/google_oauth2" for 192.168.65.1 at 2026-01-22 15:25:41 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=284238bb9e8f658ad029b7062c436301eb2df9565a401283&code=4%2F0ASc3gC2FoHyQDrsM9BFhIezrJ9M4UwhQAIjL7Lmo2vMX0pE29riy-X_fkKZ7uwEXDNINQQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none" for 192.168.65.1 at 2026-01-22 15:25:41 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"284238bb9e8f658ad029b7062c436301eb2df9565a401283", "code"=>"4/0ASc3gC2FoHyQDrsM9BFhIezrJ9M4UwhQAIjL7Lmo2vMX0pE29riy-X_fkKZ7uwEXDNINQQ", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "google_oauth2"], ["uid", "109216097957485973878"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:10:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms | Allocations: 1024)
+
+
+Started GET "/" for 192.168.65.1 at 2026-01-22 15:25:42 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 348)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:11
+  Rendered shared/_header.html.erb (Duration: 1.8ms | Allocations: 798)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3686)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 3908)
+
+
+Started GET "/level/new" for 192.168.65.1 at 2026-01-22 15:25:44 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1436)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:11
+  Rendered shared/_header.html.erb (Duration: 1.5ms | Allocations: 810)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4559)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 5234)
+
+
+Started GET "/level/new" for 192.168.65.1 at 2026-01-22 15:29:13 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LevelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering levels/new.html.erb within layouts/application
+  Rendered levels/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1400)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:12
+  Rendered shared/_header.html.erb (Duration: 8.7ms | Allocations: 5567)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 233)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 241)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 10164)
+Completed 200 OK in 21ms (Views: 14.5ms | ActiveRecord: 3.2ms | Allocations: 12064)
+
+
+Started GET "/how_to_use" for 192.168.65.1 at 2026-01-22 15:29:16 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#how_to_use as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/how_to_use.html.erb within layouts/application
+  Rendered pages/how_to_use.html.erb within layouts/application (Duration: 0.4ms | Allocations: 140)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:12
+  Rendered shared/_header.html.erb (Duration: 3.0ms | Allocations: 838)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3514)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 3959)
+
+

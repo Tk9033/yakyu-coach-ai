@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   resource :level, only: [:new, :edit, :update]
 
   get "up" => "rails/health#show", as: :rails_health_check
-
+  get "/how_to_use", to: "pages#how_to_use"
   get "/contact", to: "pages#contact"
+
 end
