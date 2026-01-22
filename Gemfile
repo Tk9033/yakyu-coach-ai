@@ -63,6 +63,12 @@ group :test do
   gem "selenium-webdriver"
 end
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'faker'
+end
+
 gem "tailwindcss-rails"
 gem "jsbundling-rails"
 gem "ruby-openai"
