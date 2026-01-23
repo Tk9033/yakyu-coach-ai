@@ -14,4 +14,8 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       redirect_to root_path, alert: "ログインに失敗しました"
     end
   end
+
+  def failure
+    redirect_to root_path, alert: "Googleログインに失敗しました"
+  end
 end
