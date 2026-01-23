@@ -12,4 +12,8 @@ class User < ApplicationRecord
       user.password = Devise.friendly_token[0, 20]
     end
   end
+
+  validates :provider, presence: true
+  validates :uid, presence: true
+  validates :uid, uniqueness: { scope: :provider }
 end
