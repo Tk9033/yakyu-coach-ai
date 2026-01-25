@@ -62,3 +62,4 @@ build-iPhoneSimulator/
 
 /node_modules
 .env
+/log/*.log
