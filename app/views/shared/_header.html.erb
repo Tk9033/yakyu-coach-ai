@@ -7,7 +7,9 @@
 
     <!-- 右：ログイン系 -->
     <div class="flex items-center gap-4">
+      <%= link_to "トップ", root_path %>
       <%= link_to "使い方", how_to_use_path %>
+      <%= link_to "理解度変更", new_level_path %>
 
       <% if user_signed_in? %>
         <!-- ログイン済み -->
