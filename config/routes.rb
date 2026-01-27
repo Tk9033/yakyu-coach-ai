@@ -20,5 +20,6 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
   get "/how_to_use", to: "pages#how_to_use"
   get "/contact", to: "pages#contact"
+  get "/terms_of_service", to: "pages#terms"
 
 end
