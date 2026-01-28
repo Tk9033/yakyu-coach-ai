@@ -21,5 +21,6 @@ Rails.application.routes.draw do
   get "/how_to_use", to: "pages#how_to_use"
   get "/contact", to: "pages#contact"
   get "/terms_of_service", to: "pages#terms"
+  get "/privacy_policy", to: "pages#privacy_policy"
 
 end
