@@ -6212,19 +6212,15 @@ document.addEventListener("turbo:load", () => {
 });
 
 // app/javascript/loading.js
-document.addEventListener("turbo:load", () => {
+document.addEventListener("turbo:submit-start", () => {
   const loading = document.getElementById("loading");
-  console.log("loading:", loading);
-  const form = document.querySelector("form");
-  console.log("form:", form);
-  if (!loading || !form) return;
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    loading.classList.remove("loading-hidden");
-    setTimeout(() => {
-      form.submit();
-    }, 100);
-  });
+  if (!loading) return;
+  loading.classList.remove("loading-hidden");
+});
+document.addEventListener("turbo:submit-end", () => {
+  const loading = document.getElementById("loading");
+  if (!loading) return;
+  loading.classList.add("loading-hidden");
 });
 
 // app/javascript/related_terms.js
