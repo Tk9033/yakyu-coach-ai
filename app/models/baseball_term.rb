@@ -1,0 +1,2 @@
+class BaseballTerm < ApplicationRecord
+end
