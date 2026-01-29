@@ -1,19 +1,13 @@
-document.addEventListener("turbo:load", () => {
+document.addEventListener("turbo:submit-start", () => {
   const loading = document.getElementById("loading");
-  console.log("loading:", loading);
+  if (!loading) return;
 
-  const form = document.querySelector("form");
-  console.log("form:", form);
+  loading.classList.remove("loading-hidden");
+});
 
-  if (!loading || !form) return;
+document.addEventListener("turbo:submit-end", () => {
+  const loading = document.getElementById("loading");
+  if (!loading) return;
 
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    loading.classList.remove("loading-hidden");
-
-    setTimeout(() => {
-      form.submit();
-    }, 100);
-  });
+  loading.classList.add("loading-hidden");
 });

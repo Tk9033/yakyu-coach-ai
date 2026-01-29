@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 .loading {
   position: fixed;
   inset: 0;
@@ -9,10 +8,14 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
+
+  opacity: 1;
+  transition: opacity 0.15s ease;
 }
 
 .loading-hidden {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .pulse-container {
