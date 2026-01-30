@@ -73,4 +73,18 @@ class TermsController < ApplicationController
 
     render :index
   end
+
+  def suggestions
+    query = (params[:q] || params[:query]).to_s.strip
+
+    return render json: [] if query.blank?
+
+    terms = BaseballTerm
+              .where("name ILIKE ?", "#{query}%") # PostgresならILIKE推奨
+              .order(:name)
+              .limit(10)
+              .pluck(:name)
+
+    render json: terms
+  end
 end

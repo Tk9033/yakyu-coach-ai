@@ -46,7 +46,12 @@
               bg-transparent
               focus:outline-none
               text-base
-            " %>
+            ",
+            data: {
+              controller: "autocomplete",
+              action: "input->autocomplete#search"
+            } %>
+
     </div>
 
     <!-- 検索ボタン（右側） -->

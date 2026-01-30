@@ -12,7 +12,10 @@ Rails.application.routes.draw do
   root "home#index"
 
   resources :terms, only: [:index] do
-    collection { get :search }
+    collection do
+      get :search
+      get :suggestions
+    end
   end
 
   resource :level, only: [:new, :edit, :update]
