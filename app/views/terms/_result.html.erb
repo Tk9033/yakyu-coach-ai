@@ -3,23 +3,23 @@
 
     <!-- 検索用語 -->
     <h2 class="text-2xl font-bold mb-6">
-      <%= @result[:title] %>
+      <%= @result.term %>
     </h2>
 
-    <!-- ここに書く -->
+    <!-- 解説文 -->
     <div class="prose prose-lg max-w-none">
-      <%= markdown(@result[:description]) %>
+      <%= markdown(@result.description) %>
     </div>
 
     <!-- 関連用語 -->
-    <% if @result[:related_terms].present? %>
+    <% if @result.related_terms.present? %>
       <div class="mt-10">
         <h3 class="text-sm font-semibold text-base-content/70 mb-3">
           関連用語
         </h3>
 
         <div class="flex flex-wrap gap-3">
-          <% @result[:related_terms].each do |term| %>
+          <% @result.related_terms.each do |term| %>
             <button
               type="button"
               data-related-term="<%= term %>"

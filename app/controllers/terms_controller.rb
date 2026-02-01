@@ -16,62 +16,20 @@ class TermsController < ApplicationController
       return render :index
     end
 
-    # プロンプト生成
-    prompt = Ai::PromptBuilder.build(
-      word: query,
+    @result = Ai::SearchService.new(
+      term: query,
       level: level
-    )
-
-    client = OpenAI::Client.new
-
-    begin
-      response = client.chat(
-        parameters: {
-          model: "gpt-4o-mini",
-          messages: [
-            { role: "system", content: Ai::SystemPrompt::BASEBALL_TERM_GUARD },
-            { role: "user", content: prompt }
-          ]
-        }
-      )
-
-      ai_text = response.dig("choices", 0, "message", "content").to_s
-
-      related_terms = []
-
-      json_regex = /\{\s*"related_terms"\s*:\s*\[[\s\S]*?\]\s*\}/
-
-      if (match = ai_text.match(json_regex))
-        begin
-          parsed = JSON.parse(match[0])
-          terms = parsed["related_terms"]
-          related_terms = terms.is_a?(Array) ? terms : []
-        rescue JSON::ParserError => e
-          Rails.logger.warn("[RelatedTerms Parse Error] #{e.message}")
-        end
-      end
-
-      description = ai_text.gsub(json_regex, "").strip
-
-      @result = {
-        title: query,
-        level: level,
-        description: description,
-        related_terms: related_terms
-      }
-    rescue OpenAI::Error => e
-      Rails.logger.error(
-        "[OpenAI Error] type=#{e.class} message=#{e.message}"
-      )
-      @error_message = t("terms.error.openai")
-    rescue StandardError => e
-      Rails.logger.error(
-        "[Unexpected Error] type=#{e.class} message=#{e.message}"
-      )
-      @error_message = t("terms.error.unexpected")
-    end
+    ).call
 
     render :index
+  rescue ActiveRecord::RecordInvalid => e
+    Rails.logger.error("[SearchService Error] #{e.record.errors.full_messages.join(', ')}")
+    @error_message = t("terms.error.unexpected")
+    render :index, status: :unprocessable_entity
+  rescue StandardError => e
+    Rails.logger.error("[Search Error] #{e.class}: #{e.message}")
+    @error_message = t("terms.error.unexpected")
+    render :index, status: :internal_server_error
   end
 
   def suggestions
