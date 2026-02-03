@@ -41,6 +41,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Build CSS (Tailwind)
+        run: bin/rails assets:precompile
+
       - name: Set up database
         run: bin/rails db:prepare
 
