@@ -41,6 +41,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Enable Corepack (Yarn Berry)
+        run: corepack enable
+
       - name: Build CSS (Tailwind)
         run: bin/rails assets:precompile
 
