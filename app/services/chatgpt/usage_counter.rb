@@ -18,7 +18,7 @@ module Chatgpt
     private
 
     def redis
-      Redis.current
+      REDIS
     end
   end
 end
