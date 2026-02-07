@@ -16,6 +16,25 @@ class TermsController < ApplicationController
       return render :index
     end
 
+    # 利用回数制限チェック
+    limiter = Chatgpt::UsageLimiter.new(
+      key: usage_key,
+      signed_in: user_signed_in?
+    )
+
+    result = limiter.check_and_increment
+
+    unless result.allowed?
+      flash.now[:alert] =
+        if user_signed_in?
+          "本日の利用回数（#{result.limit}回）に達しました。明日0時にリセットされます。"
+        else
+          "本日の無料利用回数（#{result.limit}回）に達しました。ログインすると回数が増えます。"
+        end
+
+      return render :index
+    end
+
     @result = Ai::SearchService.new(
       term: query,
       level: level
@@ -38,7 +57,7 @@ class TermsController < ApplicationController
     return render json: [] if query.blank?
 
     terms = BaseballTerm
-              .where("name ILIKE ?", "#{query}%") # PostgresならILIKE推奨
+              .where("name ILIKE ?", "#{query}%")
               .order(:name)
               .limit(10)
               .pluck(:name)
