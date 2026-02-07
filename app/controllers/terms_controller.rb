@@ -25,12 +25,7 @@ class TermsController < ApplicationController
     result = limiter.check_and_increment
 
     unless result.allowed?
-      flash.now[:alert] =
-        if user_signed_in?
-          "本日の利用回数（#{result.limit}回）に達しました。明日0時にリセットされます。"
-        else
-          "本日の無料利用回数（#{result.limit}回）に達しました。ログインすると回数が増えます。"
-        end
+      @limit_exceeded = true
 
       return render :index
     end

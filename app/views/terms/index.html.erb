@@ -5,6 +5,7 @@
     <%= t("terms.hint") %>
   </p>
 
+  <%= render "shared/limit_exceeded" if @limit_exceeded %>
   <!-- 検索フォーム -->
   <%= form_with url: search_terms_path,
               method: :get,
