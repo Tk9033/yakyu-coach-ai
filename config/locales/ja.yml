@@ -4,6 +4,9 @@ ja:
       title: "野球用語をあなたの理解度に合わせてAIが解説します"
       subtitle: "初心者でも観戦がもっと楽しくなる学習アプリです。"
       cta: "使ってみる"
+    ogp:
+      title: "Yakyu Coach|野球用語を理解度別にAIが解説"
+      description: "野球初心者から上級者まで対応。知りたい野球用語を、理解度に合わせてAIがわかりやすく解説するWebアプリです。"
 
     features:
       title: "主な機能"
@@ -29,6 +32,15 @@ ja:
         title: "3. AI が解説"
         description: "あなたに合わせた解説がすぐ届きます。"
       cta: "使ってみる"
+
+  meta:
+    title: "Yakyu Coach|野球用語を理解度別にAIが解説"
+    description: "野球初心者から上級者まで対応。知りたい野球用語を、理解度に合わせてAIがわかりやすく解説するWebアプリです。"
+
+    ogp:
+      title: "Yakyu Coach|野球用語を理解度別にAIが解説"
+      description: "野球初心者から上級者まで対応。知りたい野球用語を、理解度に合わせてAIがわかりやすく解説します。"
+      site_name: "Yakyu Coach"
 
   levels:
     title:
