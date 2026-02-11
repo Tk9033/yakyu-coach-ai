@@ -51,3 +51,31 @@
     transform: scale(0.75);
   }
 }
+
+@layer utilities {
+  .bg-app-gradient {
+    background: linear-gradient(
+      to right,
+      #2b3a8f,
+      #3b5bdc,
+      #5a7dff
+    );
+  }
+
+  .bg-card-gradient {
+    background: linear-gradient(
+      135deg,
+      #2b3a8f,
+      #3b5bdc
+    );
+  }
+
+/* ヘッダー・フッター用 */
+  .bg-app-gradient-soft {
+    background: linear-gradient(
+      to right,
+      #3b4aa0,
+      #4b6ae0
+    );
+  }
+}
