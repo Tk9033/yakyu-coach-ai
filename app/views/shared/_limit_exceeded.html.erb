@@ -1,38 +1,66 @@
-<div class="mt-6 rounded-lg border border-red-300 bg-red-50 p-6 text-center">
-  <h2 class="text-lg font-bold text-red-600">
+<div class="
+  mt-10
+  mb-16
+  max-w-4xl mx-auto
+  p-8
+  rounded-2xl
+  bg-white
+  shadow-xl
+  border border-blue-100
+  text-center
+">
+
+  <h2 class="text-2xl font-bold text-blue-800 mb-4">
     本日の利用回数に達しました
   </h2>
 
   <% if user_signed_in? %>
-    <!-- ログイン済み（20回到達） -->
-    <p class="mt-2 text-sm text-gray-700">
+
+    <p class="text-gray-700">
       本日は
-      <strong><%= Chatgpt::UsageLimit::USER_DAILY_LIMIT %>回</strong>
+      <span class="font-bold text-blue-700">
+        <%= Chatgpt::UsageLimit::USER_DAILY_LIMIT %>回
+      </span>
       に達したため、これ以上ご利用いただけません。
     </p>
 
-    <p class="mt-1 text-sm text-gray-500">
+    <p class="mt-2 text-gray-500">
       また明日ご利用ください。
     </p>
 
   <% else %>
-    <!-- 未ログイン（5回到達） -->
-    <p class="mt-2 text-sm text-gray-700">
+
+    <p class="text-gray-700">
       未ログインの場合は1日
-      <strong><%= Chatgpt::UsageLimit::GUEST_DAILY_LIMIT %>回</strong>
+      <span class="font-bold text-blue-700">
+        <%= Chatgpt::UsageLimit::GUEST_DAILY_LIMIT %>回
+      </span>
       まで利用できます。
     </p>
 
-    <p class="mt-2 text-sm text-gray-700">
+    <p class="mt-2 text-gray-700">
       ログインすると1日
-      <strong><%= Chatgpt::UsageLimit::USER_DAILY_LIMIT %>回</strong>
+      <span class="font-bold text-blue-700">
+        <%= Chatgpt::UsageLimit::USER_DAILY_LIMIT %>回
+      </span>
       まで利用できます。
     </p>
 
-    <div class="mt-4">
+    <div class="mt-6">
       <%= link_to "Googleでログインして続ける",
           user_google_oauth2_omniauth_authorize_path,
-          class: "inline-block rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700" %>
+          class: "
+            inline-block
+            px-6 py-3
+            rounded-full
+            bg-card-gradient
+            text-white
+            font-semibold
+            shadow-lg
+            hover:opacity-90
+            transition
+          " %>
     </div>
+
   <% end %>
 </div>

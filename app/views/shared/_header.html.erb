@@ -1,19 +1,20 @@
-<header class="bg-blue-100 shadow">
-  <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+<header class="bg-app-gradient-soft text-white shadow-sm">
+  <div class="container mx-auto px-4 h-19 flex items-center justify-between">
 
     <!-- 左：ロゴ -->
     <%= link_to "Yakyu Coach AI", root_path,
-        class: "font-bold text-xl text-gray-800" %>
+        class: "font-bold text-xl" %>
 
     <!-- 右：ログイン系 -->
-    <div class="flex items-center gap-4">
-      <%= link_to "トップ", root_path %>
-      <%= link_to "使い方", how_to_use_path %>
-      <%= link_to "理解度変更", new_level_path %>
+    <div class="flex items-center gap-4 text-white/90">
+
+      <%= link_to "トップ", root_path, class: "hover:text-white" %>
+      <%= link_to "使い方", how_to_use_path, class: "hover:text-white" %>
+      <%= link_to "理解度変更", new_level_path, class: "hover:text-white" %>
 
       <% if user_signed_in? %>
-        <!-- ログイン済み -->
-        <span class="text-sm text-gray-700">
+
+        <span class="text-sm text-white/80">
           <%= current_user.email %>
         </span>
 
@@ -21,16 +22,17 @@
             destroy_user_session_path,
             method: :delete,
             data: { turbo: false },
-            class: "px-4 py-2 rounded border border-gray-400 text-gray-700" %>
+            class: "px-4 py-2 rounded border border-white/40 text-white hover:bg-white/10" %>
 
       <% else %>
-        <!-- 未ログイン -->
+
         <%= link_to user_google_oauth2_omniauth_authorize_path,
-            class: "px-4 py-2 rounded border flex items-center gap-2",
+            class: "px-4 py-2 rounded border border-white/40 flex items-center gap-2 hover:bg-white/10",
             data: { turbo: false } do %>
           <img src="/google-icon.svg" class="w-4 h-4">
           Googleでログイン
         <% end %>
+
       <% end %>
 
     </div>
