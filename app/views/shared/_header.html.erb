@@ -62,23 +62,27 @@
   <!-- モバイルメニュー -->
   <div
     data-menu-target="panel"
-    class="hidden fixed top-14 right-0 w-64 h-screen bg-white text-black shadow-lg p-6">
-    <nav class="flex flex-col gap-4">
-      <%= link_to "トップ", root_path %>
-      <%= link_to "使い方", how_to_use_path %>
-      <%= link_to "理解度変更", new_level_path %>
+    class="hidden fixed top-14 right-0 w-64 bg-white text-black shadow-lg p-4">
+
+    <nav class="flex flex-col gap-2">
+      <%= link_to "トップ", root_path, class: "py-2" %>
+      <%= link_to "使い方", how_to_use_path, class: "py-2" %>
+      <%= link_to "理解度変更", new_level_path, class: "py-2" %>
 
       <% if user_signed_in? %>
         <%= button_to "ログアウト",
             destroy_user_session_path,
             method: :delete,
-            data: { turbo: false } %>
+            data: { turbo: false },
+            class: "py-2 text-left" %>
       <% else %>
         <%= link_to "Googleでログイン",
             user_google_oauth2_omniauth_authorize_path,
-            data: { turbo: false } %>
+            data: { turbo: false },
+            class: "py-2" %>
       <% end %>
     </nav>
+
   </div>
 
 </header>
