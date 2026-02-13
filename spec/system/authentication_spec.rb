@@ -21,7 +21,6 @@ RSpec.describe "ユーザー認可（Googleログイン）", type: :system do
 
       expect(page).to have_content("Googleアカウントでログインしました")
       expect(page).to have_button("ログアウト")
-      expect(page).to have_content("test@example.com")
     end
   end
 

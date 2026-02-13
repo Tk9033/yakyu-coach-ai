@@ -1,6 +1,7 @@
+<% content_for :header_title, "理解度変更" %>
 <!-- 理解度選択 / 変更 共通 -->
 <div id="level-select" data-mode="<%= @mode %>">
-  <div class="max-w-6xl mx-auto px-4 pt-20 pb-16">
+  <div class="max-w-6xl mx-auto px-4 pt-12 pb-16">
     <!-- タイトル -->
     <div class="text-center mb-12">
       <h1 class="text-3xl font-bold text-blue-900">
@@ -17,7 +18,7 @@
         <% @levels.each do |level| %>
           <div
             class="
-               w-full max-w-md px-10 py-14
+               w-full max-w-md px-8 py-10
               bg-card-gradient text-white
               rounded-2xl
               shadow-md
@@ -80,7 +81,7 @@
     </div>
 
     <% if @mode == :edit %>
-      <div class="text-center mt-16">
+      <div class="text-center mt-6">
         <%= link_to terms_path,
             data: { turbo: false },
             class: "
