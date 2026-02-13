@@ -35,8 +35,8 @@
     </div>
 
     <!-- 中央：タイトル -->
-    <div class="flex-1 text-center font-semibold text-lg md:text-xl">
-      Yakyu Coach AI
+    <div class="flex-1 text-center font-semibold text-2xl">
+      <%= content_for?(:header_title) ? yield(:header_title) : "Yakyu Coach AI" %>
     </div>
 
     <!-- 右：三本線 -->
