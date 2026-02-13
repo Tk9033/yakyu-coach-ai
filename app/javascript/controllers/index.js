@@ -6,3 +6,6 @@ import { application } from "./application"
 
 import AutocompleteController from "./autocomplete_controller"
 application.register("autocomplete", AutocompleteController)
+
+import MenuController from "./menu_controller"
+application.register("menu", MenuController)
