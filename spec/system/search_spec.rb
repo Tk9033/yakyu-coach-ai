@@ -1,5 +1,7 @@
 require "rails_helper"
 
+# ユーザー動線
+
 RSpec.describe "検索機能", type: :system do
   before do
     driven_by(:rack_test)
@@ -7,7 +9,7 @@ RSpec.describe "検索機能", type: :system do
     allow(Ai::OpenaiClient).to receive(:call).and_return(
       {
         description: <<~TEXT
-          これは解説です
+          スライダーは横方向に変化する変化球です。
           {"related_terms":["カーブ","ストレート"]}
         TEXT
       }
@@ -20,6 +22,6 @@ RSpec.describe "検索機能", type: :system do
     fill_in "search-input", with: "スライダー"
     find("button[type='submit']").click
 
-    expect(page).to have_content("これは解説です")
+    expect(page).to have_content("スライダーは横方向に変化する変化球です。")
   end
 end
