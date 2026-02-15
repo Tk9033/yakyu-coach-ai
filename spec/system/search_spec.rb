@@ -4,7 +4,7 @@ require "rails_helper"
 
 RSpec.describe "検索機能", type: :system do
   before do
-    driven_by(:rack_test)
+    driven_by(:selenium_chrome_headless)
 
     allow(Ai::OpenaiClient).to receive(:call).and_return(
       {
@@ -22,6 +22,9 @@ RSpec.describe "検索機能", type: :system do
     fill_in "search-input", with: "スライダー"
     find("button[type='submit']").click
 
-    expect(page).to have_content("スライダーは横方向に変化する変化球です。")
+    expect(page).to have_content(
+      "スライダーは横方向に変化する変化球です。",
+      wait: 5
+    )
   end
 end

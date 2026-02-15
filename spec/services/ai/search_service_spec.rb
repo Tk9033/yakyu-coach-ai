@@ -1,7 +1,6 @@
 require "rails_helper"
 
 # 内部処理
-
 RSpec.describe Ai::SearchService do
   describe "解説を生成する処理" do
     let(:term) { "スライダー" }
