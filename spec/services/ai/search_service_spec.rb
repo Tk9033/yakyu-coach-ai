@@ -1,5 +1,7 @@
 require "rails_helper"
 
+# 内部処理
+
 RSpec.describe Ai::SearchService do
   describe "#call" do
     let(:term) { "スライダー" }
