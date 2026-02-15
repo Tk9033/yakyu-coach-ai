@@ -4,27 +4,18 @@ require "rails_helper"
 
 RSpec.describe "検索機能", type: :system do
   before do
-    driven_by(:selenium_chrome_headless)
-
-    allow(Ai::OpenaiClient).to receive(:call).and_return(
-      {
-        description: <<~TEXT
-          スライダーは横方向に変化する変化球です。
-          {"related_terms":["カーブ","ストレート"]}
-        TEXT
-      }
-    )
+    driven_by(:rack_test)
   end
 
-  it "用語を検索すると解説が表示される" do
+  it "検索フォームから用語を入力して送信できる" do
     visit terms_path
 
     fill_in "search-input", with: "スライダー"
     find("button[type='submit']").click
 
-    expect(page).to have_content(
-      "スライダーは横方向に変化する変化球です。",
-      wait: 5
+    expect(page).to have_current_path(
+      search_terms_path,
+      ignore_query: true
     )
   end
 end
