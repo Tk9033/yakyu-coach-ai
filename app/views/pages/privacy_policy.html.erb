@@ -1,54 +1,95 @@
-<h1 class="text-2xl font-bold mb-6">プライバシーポリシー</h1>
+<main class="min-h-screen bg-gray-100 py-12 px-4">
+  <div class="max-w-3xl mx-auto">
 
-<p class="mb-6">
-当サービス（以下、「本サービス」）は、ユーザーの個人情報について以下のとおりプライバシーポリシーを定めます。
-</p>
+    <!-- カード -->
+    <div class="bg-white rounded-2xl shadow-lg p-8 md:p-10">
 
-<h2 class="text-xl font-semibold mt-8 mb-2">1. 個人情報の利用目的</h2>
-<p>
-本サービスでは、お問い合わせへの対応やサービス向上のために、必要な範囲で個人情報を利用します。
-</p>
+      <!-- タイトル -->
+      <h1 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10">
+        <span class="inline-block">
+          プライバシーポリシー
+          <span class="block h-1 bg-card-gradient rounded-full mt-2"></span>
+        </span>
+      </h1>
 
-<h2 class="text-xl font-semibold mt-8 mb-2">2. 取得する情報</h2>
-<p>
-本サービスでは、以下の情報を取得する場合があります。
-</p>
+      <!-- お客様から取得する情報 -->
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold text-gray-900 mb-4">
+          お客様から取得する情報
+        </h2>
 
-<ul class="list-disc ml-6">
-  <li>Googleログインにより取得されるユーザー情報（名前、メールアドレス等）</li>
-  <li>お問い合わせフォームから送信される情報</li>
-</ul>
+        <p class="leading-8 text-gray-700 mb-4">
+          当社は、お客様から以下の情報を取得します。
+        </p>
 
-<h2 class="text-xl font-semibold mt-8 mb-2">3. 個人情報の第三者提供</h2>
-<p>
-取得した個人情報は、法令に基づく場合を除き、第三者に提供することはありません。
-</p>
+        <ul class="list-disc pl-6 space-y-2 leading-8 text-gray-700">
+          <li>氏名（ニックネームやペンネームも含む）</li>
+          <li>メールアドレス</li>
+          <li>外部サービスで利用するID</li>
+          <li>Cookieを用いて生成された識別情報</li>
+          <li>OSや端末に関する情報</li>
+          <li>ウェブサイトの行動履歴</li>
+          <li>アプリの利用履歴</li>
+        </ul>
+      </section>
 
-<p>
-本サービスでは、AIによる解説機能の提供のため、ユーザーが入力した検索内容を OpenAI 社の提供する API に送信する場合があります。
-</p>
+      <!-- 利用目的 -->
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold text-gray-900 mb-4">
+          お客様の情報を利用する目的
+        </h2>
 
-<p>
-送信される情報は、解説生成の目的以外には利用されません。
-</p>
+        <ul class="list-disc pl-6 space-y-2 leading-8 text-gray-700">
+          <li>登録受付・本人確認・認証のため</li>
+          <li>利用履歴の管理のため</li>
+          <li>サービス改善のための分析</li>
+          <li>お問い合わせ対応</li>
+          <li>規約違反対応</li>
+          <li>サービス変更・終了等の通知</li>
+          <li>規約変更の通知</li>
+        </ul>
+      </section>
 
-<h2 class="text-xl font-semibold mt-8 mb-2">4. アクセス解析ツールについて</h2>
-<p>
-本サービスでは、サービス改善のためアクセス解析ツールを利用する場合があります。
-これにより収集される情報は匿名であり、個人を特定するものではありません。
-</p>
+      <!-- アクセス解析 -->
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold text-gray-900 mb-4">
+          アクセス解析ツール
+        </h2>
 
-<h2 class="text-xl font-semibold mt-8 mb-2">5. 広告について</h2>
-<p>
-本サービスでは、第三者配信の広告サービスは利用していません。
-</p>
+        <p class="leading-8 text-gray-700 mb-4">
+          当社は、アクセス解析のためにGoogleアナリティクスを利用しています。
+          GoogleアナリティクスはCookieを使用し、匿名でデータを収集します。
+        </p>
 
-<h2 class="text-xl font-semibold mt-8 mb-2">6. プライバシーポリシーの変更</h2>
-<p>
-本ポリシーの内容は、必要に応じて予告なく変更することがあります。
-</p>
+        <a
+          href="https://marketingplatform.google.com/about/analytics/terms/jp/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-600 hover:underline break-all"
+        >
+          Googleアナリティクス利用規約
+        </a>
+      </section>
 
-<h2 class="text-xl font-semibold mt-8 mb-2">7. お問い合わせ</h2>
-<p>
-本ポリシーに関するお問い合わせは、お問い合わせページよりご連絡ください。
-</p>
+      <!-- お問い合わせ -->
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold text-gray-900 mb-4">
+          お問い合わせ
+        </h2>
+
+        <p class="leading-8 text-gray-700">
+          ご不明点がある場合は、
+          <%= link_to "お問い合わせフォーム", contact_path,
+              class: "text-blue-600 hover:underline font-medium" %>
+          よりご連絡ください。
+        </p>
+      </section>
+
+      <!-- 制定日 -->
+      <p class="text-sm text-gray-500 mt-12">
+        2026年02月16日 制定
+      </p>
+
+    </div>
+  </div>
+</main>
