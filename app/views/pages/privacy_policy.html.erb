@@ -1,95 +1,80 @@
-<main class="min-h-screen bg-gray-100 py-12 px-4">
-  <div class="max-w-3xl mx-auto">
+<%= render "shared/legal_layout", title: "プライバシーポリシー" do %>
 
-    <!-- カード -->
-    <div class="bg-white rounded-2xl shadow-lg p-8 md:p-10">
+  <!-- お客様から取得する情報 -->
+  <section class="mb-10">
+    <h2 class="text-xl font-semibold text-gray-900 mb-4">
+      お客様から取得する情報
+    </h2>
 
-      <!-- タイトル -->
-      <h1 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10">
-        <span class="inline-block">
-          プライバシーポリシー
-          <span class="block h-1 bg-card-gradient rounded-full mt-2"></span>
-        </span>
-      </h1>
+    <p class="leading-8 text-gray-700 mb-4">
+      当社は、お客様から以下の情報を取得します。
+    </p>
 
-      <!-- お客様から取得する情報 -->
-      <section class="mb-10">
-        <h2 class="text-xl font-semibold text-gray-900 mb-4">
-          お客様から取得する情報
-        </h2>
+    <ul class="list-disc pl-6 space-y-2 leading-8 text-gray-700">
+      <li>氏名（ニックネームやペンネームも含む）</li>
+      <li>メールアドレス</li>
+      <li>外部サービスで利用するID</li>
+      <li>Cookieを用いて生成された識別情報</li>
+      <li>OSや端末に関する情報</li>
+      <li>ウェブサイトの行動履歴</li>
+      <li>アプリの利用履歴</li>
+    </ul>
+  </section>
 
-        <p class="leading-8 text-gray-700 mb-4">
-          当社は、お客様から以下の情報を取得します。
-        </p>
+  <!-- 利用目的 -->
+  <section class="mb-10">
+    <h2 class="text-xl font-semibold text-gray-900 mb-4">
+      お客様の情報を利用する目的
+    </h2>
 
-        <ul class="list-disc pl-6 space-y-2 leading-8 text-gray-700">
-          <li>氏名（ニックネームやペンネームも含む）</li>
-          <li>メールアドレス</li>
-          <li>外部サービスで利用するID</li>
-          <li>Cookieを用いて生成された識別情報</li>
-          <li>OSや端末に関する情報</li>
-          <li>ウェブサイトの行動履歴</li>
-          <li>アプリの利用履歴</li>
-        </ul>
-      </section>
+    <ul class="list-disc pl-6 space-y-2 leading-8 text-gray-700">
+      <li>登録受付・本人確認・認証のため</li>
+      <li>利用履歴の管理のため</li>
+      <li>サービス改善のための分析</li>
+      <li>お問い合わせ対応</li>
+      <li>規約違反対応</li>
+      <li>サービス変更・終了等の通知</li>
+      <li>規約変更の通知</li>
+    </ul>
+  </section>
 
-      <!-- 利用目的 -->
-      <section class="mb-10">
-        <h2 class="text-xl font-semibold text-gray-900 mb-4">
-          お客様の情報を利用する目的
-        </h2>
+  <!-- アクセス解析 -->
+  <section class="mb-10">
+    <h2 class="text-xl font-semibold text-gray-900 mb-4">
+      アクセス解析ツール
+    </h2>
 
-        <ul class="list-disc pl-6 space-y-2 leading-8 text-gray-700">
-          <li>登録受付・本人確認・認証のため</li>
-          <li>利用履歴の管理のため</li>
-          <li>サービス改善のための分析</li>
-          <li>お問い合わせ対応</li>
-          <li>規約違反対応</li>
-          <li>サービス変更・終了等の通知</li>
-          <li>規約変更の通知</li>
-        </ul>
-      </section>
+    <p class="leading-8 text-gray-700 mb-4">
+      当社は、アクセス解析のためにGoogleアナリティクスを利用しています。
+      GoogleアナリティクスはCookieを使用し、匿名でデータを収集します。
+    </p>
 
-      <!-- アクセス解析 -->
-      <section class="mb-10">
-        <h2 class="text-xl font-semibold text-gray-900 mb-4">
-          アクセス解析ツール
-        </h2>
+    <a
+      href="https://marketingplatform.google.com/about/analytics/terms/jp/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-blue-600 hover:underline break-all"
+    >
+      Googleアナリティクス利用規約
+    </a>
+  </section>
 
-        <p class="leading-8 text-gray-700 mb-4">
-          当社は、アクセス解析のためにGoogleアナリティクスを利用しています。
-          GoogleアナリティクスはCookieを使用し、匿名でデータを収集します。
-        </p>
+  <!-- お問い合わせ -->
+  <section class="mb-10">
+    <h2 class="text-xl font-semibold text-gray-900 mb-4">
+      お問い合わせ
+    </h2>
 
-        <a
-          href="https://marketingplatform.google.com/about/analytics/terms/jp/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-blue-600 hover:underline break-all"
-        >
-          Googleアナリティクス利用規約
-        </a>
-      </section>
+    <p class="leading-8 text-gray-700">
+      ご不明点がある場合は、
+      <%= link_to "お問い合わせフォーム", contact_path,
+          class: "text-blue-600 hover:underline font-medium" %>
+      よりご連絡ください。
+    </p>
+  </section>
 
-      <!-- お問い合わせ -->
-      <section class="mb-10">
-        <h2 class="text-xl font-semibold text-gray-900 mb-4">
-          お問い合わせ
-        </h2>
-
-        <p class="leading-8 text-gray-700">
-          ご不明点がある場合は、
-          <%= link_to "お問い合わせフォーム", contact_path,
-              class: "text-blue-600 hover:underline font-medium" %>
-          よりご連絡ください。
-        </p>
-      </section>
-
-      <!-- 制定日 -->
-      <p class="text-sm text-gray-500 mt-12">
-        2026年02月16日 制定
-      </p>
-
-    </div>
-  </div>
-</main>
+  <!-- 制定日 -->
+  <p class="text-sm text-gray-500 mt-12">
+    2026年02月16日 制定
+  </p>
+<% end %>
