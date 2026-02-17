@@ -39,7 +39,7 @@ class TermsController < ApplicationController
   rescue ActiveRecord::RecordInvalid => e
     Rails.logger.error("[SearchService Error] #{e.record.errors.full_messages.join(', ')}")
     @error_message = t("terms.error.unexpected")
-    render :index, status: :unprocessable_entity
+    render :index, status: :unprocessable_content
   rescue StandardError => e
     Rails.logger.error("[Search Error] #{e.class}: #{e.message}")
     @error_message = t("terms.error.unexpected")

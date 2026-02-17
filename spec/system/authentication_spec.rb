@@ -5,7 +5,7 @@ RSpec.describe "ユーザー認可（Googleログイン）", type: :system do
     driven_by(:rack_test)
   end
 
-  context "未ログイン時" do
+  context "when 未ログイン時" do
     it "トップページにGoogleでログインボタンが表示されている" do
       visit root_path
 
@@ -13,7 +13,7 @@ RSpec.describe "ユーザー認可（Googleログイン）", type: :system do
     end
   end
 
-  context "Googleログイン" do
+  context "when Googleログイン" do
     it "Googleアカウントでログインできる" do
       visit root_path
 
@@ -24,7 +24,7 @@ RSpec.describe "ユーザー認可（Googleログイン）", type: :system do
     end
   end
 
-  context "ログアウト" do
+  context "when ログアウト" do
     it "ログアウトできる" do
       visit root_path
       click_link "Googleでログイン"
@@ -36,7 +36,7 @@ RSpec.describe "ユーザー認可（Googleログイン）", type: :system do
     end
   end
 
-  context "Googleログイン失敗時" do
+  context "when Googleログイン失敗時" do
     before do
       OmniAuth.config.mock_auth[:google_oauth2] = :invalid_credentials
     end

@@ -88,3 +88,8 @@ ja:
 
     sessions:
       signed_out: "ログアウトしました"
+
+  auth:
+    google_auth_info_missing: "認証情報を取得できませんでした"
+    login_failed: "ログインに失敗しました"
+    google_login_failed: "Googleログインに失敗しました"

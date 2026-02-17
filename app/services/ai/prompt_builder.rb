@@ -2,8 +2,6 @@ module Ai
   class PromptBuilder
     def self.build(word:, level:)
       case level.to_sym
-      when :beginner
-        beginner_prompt(word)
       when :intermediate
         intermediate_prompt(word)
       when :advanced
