@@ -11,7 +11,12 @@ module Chatgpt
 
     # 使用回数を +1 する
     def increment
-      redis.incr(@key)
+      new_count = redis.incr(@key)
+
+      # 初回（値が1になった時）だけ、24時間の有効期限を設定する
+
+      return unless new_count == 1
+
       redis.expire(@key, 24.hours.to_i)
     end
 
