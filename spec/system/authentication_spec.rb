@@ -17,7 +17,7 @@ RSpec.describe "ユーザー認可（Googleログイン）", type: :system do
     it "Googleアカウントでログインできる" do
       visit root_path
 
-      click_link "Googleでログイン"
+      first(:link, "Googleでログイン").click
 
       expect(page).to have_content("Googleアカウントでログインしました")
       expect(page).to have_button("ログアウト")
@@ -27,7 +27,7 @@ RSpec.describe "ユーザー認可（Googleログイン）", type: :system do
   context "when ログアウト" do
     it "ログアウトできる" do
       visit root_path
-      click_link "Googleでログイン"
+      first(:link, "Googleでログイン").click
 
       click_button "ログアウト"
 
@@ -47,7 +47,7 @@ RSpec.describe "ユーザー認可（Googleログイン）", type: :system do
 
     it "ログインできず、エラーメッセージが表示される" do
       visit root_path
-      click_link "Googleでログイン"
+      first(:link, "Googleでログイン").click
 
       expect(page).to have_content("Googleログインに失敗しました")
       expect(page).to have_link("Googleでログイン")
