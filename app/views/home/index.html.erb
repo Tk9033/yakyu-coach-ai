@@ -16,17 +16,33 @@
 <!-- アプリの説明 -->
 <section class="py-10 px-4">
   <div class="bg-card-gradient text-white rounded-xl shadow-lg p-8 text-center max-w-4xl mx-auto">
+
     <h2 class="text-2xl font-bold mb-4">
       <%= t("home.hero.title") %>
     </h2>
-    <p class="text-white/90 mb-6">
+
+    <p class="text-white/90 mb-8">
       <%= t("home.hero.subtitle") %>
     </p>
 
-    <%= link_to t("home.hero.cta"),
-      new_level_path,
-      class: "bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100"
-    %>
+    <!-- ボタン -->
+    <div class="flex flex-col md:flex-row gap-3 justify-center items-center">
+
+      <!-- Googleログイン -->
+      <%= link_to user_google_oauth2_omniauth_authorize_path,
+        data: { turbo: false },
+        class: "order-2 md:order-1 bg-white text-blue-700 font-semibold px-5 py-2.5 rounded-lg shadow hover:bg-gray-100" do %>
+        Googleでログイン
+      <% end %>
+
+      <!-- 使ってみる -->
+      <%= link_to t("home.hero.cta"),
+        new_level_path,
+        class: "order-1 md:order-2 bg-white text-blue-700 font-semibold px-5 py-2.5 rounded-lg shadow hover:bg-gray-100"
+      %>
+
+    </div>
+
   </div>
 </section>
 
@@ -109,12 +125,20 @@
       </div>
     </div>
 
-    <div class="text-center mt-8">
-      <%= link_to t("home.how_to.cta"),
+  <div class="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
+
+    <!-- Googleログイン -->
+      <%= link_to user_google_oauth2_omniauth_authorize_path,
+        data: { turbo: false },
+        class: "order-2 md:order-1 bg-white text-blue-700 font-semibold px-5 py-2.5 rounded-lg shadow hover:bg-gray-100" do %>
+        Googleでログイン
+      <% end %>
+
+      <!-- 使ってみる -->
+      <%= link_to t("home.hero.cta"),
         new_level_path,
-        class: "bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100"
+        class: "order-1 md:order-2 bg-white text-blue-700 font-semibold px-5 py-2.5 rounded-lg shadow hover:bg-gray-100"
       %>
-    </div>
 
   </div>
 </section>
