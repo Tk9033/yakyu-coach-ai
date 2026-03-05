@@ -10,9 +10,16 @@
   ">
 
     <!-- 検索用語 -->
-    <h2 class="text-2xl font-bold mb-6">
-      <%= @result.term %>
-    </h2>
+
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-2xl font-bold">
+        <%= @result.term %>
+      </h2>
+
+      <div id="bookmark_button_<%= @result.id %>">
+        <%= render "terms/bookmark_button", result: @result %>
+      </div>
+    </div>
 
     <!-- 解説文 -->
     <div class="prose prose-lg max-w-none prose-strong:text-white prose-strong:font-bold">

@@ -4,7 +4,7 @@ class BookmarksController < ApplicationController
 
   # ブックマーク
   def create
-    bookmark = current_user.bookmarks.create(ai_result_id: params[:ai_result_id])
+    current_user.bookmarks.create(ai_result_id: params[:ai_result_id])
     redirect_back fallback_location: root_path
   end
 
