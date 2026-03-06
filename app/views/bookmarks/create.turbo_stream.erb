@@ -1,0 +1,3 @@
+<%= turbo_stream.update dom_id(@ai_result, :bookmark) do %>
+  <%= render "bookmarks/bookmark_button", result: @ai_result %>
+<% end %>

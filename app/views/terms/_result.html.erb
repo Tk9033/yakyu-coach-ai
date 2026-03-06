@@ -10,15 +10,12 @@
   ">
 
     <!-- 検索用語 -->
-
     <div class="flex justify-between items-center mb-6">
       <h2 class="text-2xl font-bold">
         <%= @result.term %>
       </h2>
 
-      <div id="bookmark_button_<%= @result.id %>">
-        <%= render "terms/bookmark_button", result: @result %>
-      </div>
+      <%= render "bookmarks/bookmark_button", result: @result %>
     </div>
 
     <!-- 解説文 -->

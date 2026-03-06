@@ -8682,9 +8682,13 @@ document.addEventListener("turbo:load", () => {
 });
 
 // app/javascript/loading.js
-document.addEventListener("turbo:submit-start", () => {
+document.addEventListener("turbo:submit-start", (event) => {
   const loading = document.getElementById("loading");
   if (!loading) return;
+  const fetchOptions = event.detail.formSubmission.fetchOptions;
+  if (fetchOptions.headers["Accept"]?.includes("text/turbo-stream")) {
+    return;
+  }
   loading.classList.remove("loading-hidden");
 });
 document.addEventListener("turbo:submit-end", () => {

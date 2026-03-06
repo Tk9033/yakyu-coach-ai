@@ -1,0 +1,20 @@
+<div id="<%= dom_id(result, :bookmark) %>">
+  <% if user_signed_in? %>
+    <% bookmark = current_user.bookmarks.find_by(ai_result_id: result.id) %>
+    <% if bookmark %>
+      <%= button_to bookmark_path(bookmark),
+          method: :delete,
+          data: { turbo_stream: true },
+          class: "text-yellow-400 ..." do %>
+        ★
+      <% end %>
+    <% else %>
+      <%= button_to bookmarks_path(ai_result_id: result.id),
+          method: :post,
+          data: { turbo_stream: true },
+          class: "text-gray-300 ..." do %>
+        ☆
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
