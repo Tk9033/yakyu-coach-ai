@@ -2,6 +2,7 @@ class TermsController < ApplicationController
   def index
   end
 
+  # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
   def search
     query = params[:query].to_s.strip
     level = session[:level] || params[:level] || "beginner"
@@ -17,18 +18,21 @@ class TermsController < ApplicationController
     end
 
     # 利用回数制限チェック
-    limiter = Chatgpt::UsageLimiter.new(
-      key: usage_key,
-      signed_in: user_signed_in?
-    )
+    unless Rails.env.development?
+      limiter = Chatgpt::UsageLimiter.new(
+        key: usage_key,
+        signed_in: user_signed_in?
+      )
 
-    result = limiter.check_and_increment
+      result = limiter.check_and_increment
 
-    unless result.allowed?
-      @limit_exceeded = true
+      unless result.allowed?
+        @limit_exceeded = true
 
-      return render :index
+        return render :index
+      end
     end
+    # rubocop:enable Metrics/AbcSize, Metrics/MethodLength
 
     @result = Ai::SearchService.new(
       term: query,
