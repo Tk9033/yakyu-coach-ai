@@ -2,7 +2,12 @@ class BookmarksController < ApplicationController
   # ログイン
   before_action :authenticate_user!
 
-  # ブックマーク
+  # ブックマーク表示
+  def index
+   @bookmarks = current_user.bookmarks.includes(:ai_result).order(created_at: :desc)
+  end
+
+  # ブックマーク 登録
   def create
     @ai_result = AiResult.find(params[:ai_result_id])
     current_user.bookmarks.create(ai_result: @ai_result)
