@@ -2,6 +2,7 @@ class TermsController < ApplicationController
   def index
   end
 
+  # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
   def search
     query = params[:query].to_s.strip
     level = session[:level] || params[:level] || "beginner"
@@ -31,6 +32,7 @@ class TermsController < ApplicationController
         return render :index
       end
     end
+    # rubocop:enable Metrics/AbcSize, Metrics/MethodLength
 
     @result = Ai::SearchService.new(
       term: query,

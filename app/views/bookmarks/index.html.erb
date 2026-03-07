@@ -14,12 +14,10 @@
 
           <div class="flex-1">
             <div class="font-bold text-lg text-gray-900">
-              <%# カラム名を term に修正 %>
               <%= bookmark.ai_result.term || "用語の解説" %>
             </div>
 
             <div class="text-sm text-gray-500 mt-1">
-              <%# description カラムを表示 %>
               <%= truncate(bookmark.ai_result.description, length: 100) %>
             </div>
           </div>

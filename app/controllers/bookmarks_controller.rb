@@ -4,7 +4,7 @@ class BookmarksController < ApplicationController
 
   # ブックマーク表示
   def index
-   @bookmarks = current_user.bookmarks.includes(:ai_result).order(created_at: :desc)
+    @bookmarks = current_user.bookmarks.includes(:ai_result).order(created_at: :desc)
   end
 
   # ブックマーク 登録
@@ -13,7 +13,7 @@ class BookmarksController < ApplicationController
     current_user.bookmarks.create(ai_result: @ai_result)
 
     respond_to do |format|
-      format.html { redirect_back fallback_location: root_path }
+      format.html { redirect_back_or_to(root_path) }
       format.turbo_stream # create.turbo_stream.erb を探しにいく
     end
   end
@@ -25,7 +25,7 @@ class BookmarksController < ApplicationController
     bookmark.destroy
 
     respond_to do |format|
-      format.html { redirect_back fallback_location: root_path }
+      format.html { redirect_back_or_to(root_path) }
       format.turbo_stream # destroy.turbo_stream.erb を探しにいく
     end
   end
