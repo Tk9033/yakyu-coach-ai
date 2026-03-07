@@ -70,6 +70,7 @@
       <%= link_to "理解度変更", new_level_path, class: "py-2" %>
 
       <% if user_signed_in? %>
+        <%= link_to "ブックマーク", bookmarks_path, class: "py-2" %>
         <%= button_to "ログアウト",
             destroy_user_session_path,
             method: :delete,
