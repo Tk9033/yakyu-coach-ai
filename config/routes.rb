@@ -20,6 +20,7 @@ Rails.application.routes.draw do
 
   resource :level, only: [:new, :edit, :update]
   resources :bookmarks, only: [:index, :create, :destroy]
+  resources :ai_results, only: [:show]
 
   get "up" => "rails/health#show", as: :rails_health_check
   get "/how_to_use", to: "pages#how_to_use"

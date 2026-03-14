@@ -40,14 +40,20 @@ class TermsController < ApplicationController
     ).call
 
     render :index
-  rescue ActiveRecord::RecordInvalid => e
-    Rails.logger.error("[SearchService Error] #{e.record.errors.full_messages.join(', ')}")
-    @error_message = t("terms.error.unexpected")
-    render :index, status: :unprocessable_content
-  rescue StandardError => e
-    Rails.logger.error("[Search Error] #{e.class}: #{e.message}")
-    @error_message = t("terms.error.unexpected")
-    render :index, status: :internal_server_error
+    rescue ActiveRecord::RecordInvalid => e
+      Rails.logger.error("[SearchService Error] #{e.record.errors.full_messages.join(', ')}")
+      @error_message = t("terms.error.unexpected")
+      render :index, status: :unprocessable_content
+    rescue StandardError => e
+      Rails.logger.error("[Search Error] #{e.class}: #{e.message}")
+      @error_message = t("terms.error.unexpected")
+      render :index, status: :internal_server_error
+    end
+
+    def show
+      @ai_result = AiResult.find(params[:id])
+      render :index
+    end
   end
 
   def suggestions
