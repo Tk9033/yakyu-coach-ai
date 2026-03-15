@@ -48,12 +48,6 @@ class TermsController < ApplicationController
       Rails.logger.error("[Search Error] #{e.class}: #{e.message}")
       @error_message = t("terms.error.unexpected")
       render :index, status: :internal_server_error
-    end
-
-    def show
-      @ai_result = AiResult.find(params[:id])
-      render :index
-    end
   end
 
   def suggestions
