@@ -10,7 +10,7 @@
     <div class="space-y-4">
 
       <% @bookmarks.each do |bookmark| %>
-        <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
+        <div id="bookmark_<%= bookmark.id %>" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
 
           <div class="flex-1">
             <div class="font-bold text-lg text-gray-900">
