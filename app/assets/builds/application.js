@@ -8686,15 +8686,15 @@ document.addEventListener("turbo:submit-start", (event) => {
   const loading = document.getElementById("loading");
   if (!loading) return;
   const fetchOptions = event.detail.formSubmission.fetchOptions;
-  if (fetchOptions.headers["Accept"]?.includes("text/turbo-stream")) {
-    return;
-  }
+  const accept = fetchOptions.headers.get("Accept");
+  if (accept && accept.includes("turbo-stream")) return;
   loading.classList.remove("loading-hidden");
 });
-document.addEventListener("turbo:submit-end", () => {
+document.addEventListener("submit", (event) => {
+  if (event.target.id !== "search-form") return;
   const loading = document.getElementById("loading");
   if (!loading) return;
-  loading.classList.add("loading-hidden");
+  loading.classList.remove("loading-hidden");
 });
 
 // app/javascript/related_terms.js

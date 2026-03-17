@@ -22,9 +22,9 @@ class BookmarksController < ApplicationController
 
   # ブックマーク削除
   def destroy
-    bookmark = current_user.bookmarks.find(params[:id])
-    @ai_result = bookmark.ai_result
-    bookmark.destroy
+    @bookmark = current_user.bookmarks.find(params[:id])
+    @ai_result = @bookmark.ai_result
+    @bookmark.destroy
 
     flash.now[:notice] = t("bookmarks.flash.destroy")
 

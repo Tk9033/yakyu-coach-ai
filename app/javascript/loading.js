@@ -2,18 +2,22 @@ document.addEventListener("turbo:submit-start", (event) => {
   const loading = document.getElementById("loading");
   if (!loading) return;
 
-  // turbo-stream するときはローディングを表示せずに中断（return）する
   const fetchOptions = event.detail.formSubmission.fetchOptions;
-  if (fetchOptions.headers['Accept']?.includes('text/turbo-stream')) {
-    return;
-  }
+  const accept = fetchOptions.headers.get("Accept");
+
+  // ローディング非表示
+  if (accept && accept.includes("turbo-stream")) return;
 
   loading.classList.remove("loading-hidden");
 });
 
-document.addEventListener("turbo:submit-end", () => {
+
+// ローディング表示
+document.addEventListener("submit", (event) => {
+  if (event.target.id !== "search-form") return;
+
   const loading = document.getElementById("loading");
   if (!loading) return;
 
-  loading.classList.add("loading-hidden");
+  loading.classList.remove("loading-hidden");
 });
