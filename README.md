@@ -18,7 +18,7 @@
 
 # サービス概要
 野球中継の専門用語についていけなかったり、子どもの試合で何が起きているのか分からない人のためのアプリです。
-「あの走るやつ」「ダブルなんとか」など曖昧な検索でも、AIがあなたの理解度に合わせて、野球以外の例えや観戦ポイントを交えて分かりやすく解説します。
+「あの走るやつ」「ダブルなんとか」など曖昧な検索でも、AIがユーザーの理解度（初心者〜上級者）に合わせて、野球以外の例えや観戦ポイントを交えて分かりやすく解説します。
 調べるだけでその場で理解でき、恥ずかしくて聞けない疑問もすぐに解決できます。
 <br>
 
@@ -86,17 +86,24 @@ https://yakyucoach.com/
 </div>
 
 <br><br>
-# 使用する技術スタック
-- Ruby on Rails 7.1.5 / Ruby 3.2.6
-- JavaScript
-- Tailwind CSS / DaisyUI
-- Render（デプロイ）
-- OpenAI API
-- PostgreSQL
-- Docker
 
-# 画面遷移図
+# 技術構成
+
+## 使用技術
+
+
+| カテゴリ | 技術内容 |
+| --- | --- |
+| サーバーサイド | Ruby on Rails 7.1.5 Ruby 3.2.6 |
+| フロントエンド | Ruby on Rails・JavaScript |
+| CSSフレームワーク | Tailwindcss |
+| Web API | OpenAI API |
+| データベース | PostgreSQL |
+| デプロイ | Render |
+| 環境構築 | Docker |
+
+## 画面遷移図
 - [画面遷移図（Figma）](https://www.figma.com/design/8WVZxTzZAwlwzfKY0MoGwV/無題?node-id=0-1&t=YxwhpswlSKCxnMPF-1)
 
-# ER図
+## ER図
 ![ER図](https://i.gyazo.com/8be550529b123fa2e5f12f7367b511e4.png)
