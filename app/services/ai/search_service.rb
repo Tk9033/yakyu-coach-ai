@@ -8,14 +8,17 @@ module Ai
     def call
       normalized_term = normalize(@term)
 
+      # すでに保存されてるAIの結果があるか探す
       cached_result = AiResult.find_by(
         term: normalized_term,
         level: @level
       )
       return cached_result if cached_result
 
+      # OpenAI APIを呼び出して解説を生成
       ai_response = call_openai(normalized_term)
 
+      # AIが生成した解説文を保存
       AiResult.create!(
         term: normalized_term,
         level: @level,
