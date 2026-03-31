@@ -9,7 +9,8 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
     if @user.persisted?
       set_flash_message(:notice, :success, kind: "Google") if is_navigational_format?
-      sign_in_and_redirect @user, event: :authentication
+      sign_in(@user)
+      redirect_to new_level_path
     else
       redirect_to root_path, alert: t("auth.login_failed")
     end
