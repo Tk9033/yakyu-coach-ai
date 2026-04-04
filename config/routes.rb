@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   get 'pages/contact'
 
   devise_for :users, controllers: {
-    omniauth_callbacks: "users/omniauth_callbacks"
+    omniauth_callbacks: "users/omniauth_callbacks",
+    sessions: 'users/sessions',
   }
 
   devise_scope :user do
@@ -27,5 +28,5 @@ Rails.application.routes.draw do
   get "/contact", to: "pages#contact"
   get "/terms_of_service", to: "pages#terms"
   get "/privacy_policy", to: "pages#privacy_policy"
-
+  post "/guest_login", to: "users/sessions#guest_login"
 end

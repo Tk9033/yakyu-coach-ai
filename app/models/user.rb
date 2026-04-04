@@ -16,7 +16,17 @@ class User < ApplicationRecord
     end
   end
 
-  validates :provider, presence: true
-  validates :uid, presence: true
-  validates :uid, uniqueness: { scope: :provider }
+  GUEST_EMAIL = "guest@example.com"
+
+  def guest?
+    email == GUEST_EMAIL
+  end
+
+  def omniauth_user?
+    provider.present? && uid.present?
+  end
+
+  validates :provider, presence: true, if: :omniauth_user?
+  validates :uid, presence: true, if: :omniauth_user?
+  validates :uid, uniqueness: { scope: :provider }, if: :omniauth_user?
 end
