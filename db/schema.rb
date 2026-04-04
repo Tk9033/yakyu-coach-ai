@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2026_03_04_120407) do
+ActiveRecord::Schema[7.1].define(version: 2026_03_31_141022) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -24,13 +24,6 @@ ActiveRecord::Schema[7.1].define(version: 2026_03_04_120407) do
     t.index ["term", "level"], name: "index_ai_results_on_term_and_level", unique: true
   end
 
-  create_table "baseball_terms", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_baseball_terms_on_name"
-  end
-
   create_table "bookmarks", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "ai_result_id", null: false
@@ -39,12 +32,6 @@ ActiveRecord::Schema[7.1].define(version: 2026_03_04_120407) do
     t.index ["ai_result_id"], name: "index_bookmarks_on_ai_result_id"
     t.index ["user_id", "ai_result_id"], name: "index_bookmarks_on_user_id_and_ai_result_id", unique: true
     t.index ["user_id"], name: "index_bookmarks_on_user_id"
-  end
-
-  create_table "posts", force: :cascade do |t|
-    t.string "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
