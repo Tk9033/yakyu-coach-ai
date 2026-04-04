@@ -16,7 +16,7 @@ class User < ApplicationRecord
     end
   end
 
-  GUEST_EMAIL = "guest@example.com"
+  GUEST_EMAIL = "guest@example.com".freeze
 
   def guest?
     email == GUEST_EMAIL
