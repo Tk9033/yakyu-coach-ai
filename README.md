@@ -106,4 +106,4 @@ https://yakyucoach.com/
 - [画面遷移図（Figma）](https://www.figma.com/design/8WVZxTzZAwlwzfKY0MoGwV/無題?node-id=0-1&t=YxwhpswlSKCxnMPF-1)
 
 ## ER図
-![ER図](https://i.gyazo.com/8be550529b123fa2e5f12f7367b511e4.png)
+![ER図](https://i.gyazo.com/6b3c3e24895aa4f466e652e8477a8935.png)
