@@ -10,6 +10,9 @@ class Users::SessionsController < Devise::SessionsController
     end
 
     sign_in(:user, user)
-    redirect_to new_level_path, notice: "ゲストとしてログインしました", status: :see_other
+    flash[:notice] = "ゲストとしてログインしました"
+    flash[:alert]  = "ゲストでは解説文の保存はできません。ログインするとご利用いただけます。"
+
+    redirect_to new_level_path, status: :see_other
   end
 end
