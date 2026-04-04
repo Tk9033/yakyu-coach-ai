@@ -10,6 +10,6 @@ class Users::SessionsController < Devise::SessionsController
     end
 
     sign_in(:user, user)
-    redirect_to root_path, notice: "ゲストとしてログインしました"
+    redirect_to new_level_path, notice: "ゲストとしてログインしました", status: :see_other
   end
 end

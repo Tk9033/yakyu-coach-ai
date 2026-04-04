@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   devise_scope :user do
     get "users/auth/failure", to: "users/omniauth_callbacks#failure"
+    post "/guest_login", to: "users/sessions#guest_login"
   end
 
   root "home#index"
@@ -28,5 +29,4 @@ Rails.application.routes.draw do
   get "/contact", to: "pages#contact"
   get "/terms_of_service", to: "pages#terms"
   get "/privacy_policy", to: "pages#privacy_policy"
-  post "/guest_login", to: "users/sessions#guest_login"
 end
