@@ -11,7 +11,7 @@ RSpec.describe "検索機能", type: :system do
     visit terms_path
 
     fill_in "search-input", with: "スライダー"
-    find("button[type='submit']").click
+    find("#search-button").click
 
     expect(page).to have_current_path(
       search_terms_path,
