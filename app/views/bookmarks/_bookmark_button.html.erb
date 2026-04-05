@@ -1,5 +1,5 @@
 <div id="<%= dom_id(result, :bookmark) %>">
-  <% if user_signed_in? %>
+  <% if user_signed_in? && !current_user.guest? %>
     <% bookmark = current_user.bookmarks.find_by(ai_result_id: result.id) %>
     <% if bookmark %>
       <%= button_to bookmark_path(bookmark),

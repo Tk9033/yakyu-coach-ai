@@ -1,6 +1,6 @@
 module Chatgpt
   module UsageLimit
-    GUEST_DAILY_LIMIT = 5
-    USER_DAILY_LIMIT  = 20
+    GUEST_DAILY_LIMIT = 100
+    USER_DAILY_LIMIT  = 100
   end
 end

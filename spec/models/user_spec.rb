@@ -8,15 +8,9 @@ RSpec.describe User, type: :model do
       end
     end
 
-    context "when provider がない場合" do
-      it "無効である" do
-        expect(build(:user, provider: nil)).not_to be_valid
-      end
-    end
-
-    context "when uid がない場合" do
-      it "無効である" do
-        expect(build(:user, uid: nil)).not_to be_valid
+    context "when provider と uid が両方ない場合（ゲスト）" do
+      it "有効である" do
+        expect(build(:user, provider: nil, uid: nil)).to be_valid
       end
     end
 

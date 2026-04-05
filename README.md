@@ -38,9 +38,9 @@ https://yakyucoach.com/
 
 <div style="text-align: center;">
   <h3>1. トップページ</h3>
-  <img src="https://i.gyazo.com/83ff22fc85d7d7b8d11e2c85b8c7295d.gif" width="80%">
+  <img src="https://i.gyazo.com/984c27205a6bfd7c6f5c4f94530f313b.gif)" width="80%">
   <div style="width: 80%; text-align: left; margin: 15px auto 0; line-height: 1.6;">
-    トップページの「使ってみる」ボタンから、理解度選択画面へ進むことができ、ログイン不要で、すぐに利用を開始することができます。
+    トップページの「使ってみる」ボタンからゲストログインを行い、理解度選択画面へ進みます。 <br> アカウント登録なしで、すぐにアプリを体験することができます。
   </div>
 </div>
 

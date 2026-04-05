@@ -65,24 +65,53 @@
     class="hidden fixed top-14 right-0 w-64 bg-white text-black shadow-lg p-4">
 
     <nav class="flex flex-col gap-2">
-      <%= link_to "トップ", root_path, class: "py-2" %>
-      <%= link_to "使い方", how_to_use_path, class: "py-2" %>
-      <%= link_to "理解度変更", new_level_path, class: "py-2" %>
+  <%= link_to "トップ", root_path, class: "py-2" %>
+  <%= link_to "使い方", how_to_use_path, class: "py-2" %>
+  <%= link_to "理解度変更", new_level_path, class: "py-2" %>
 
-      <% if user_signed_in? %>
-        <%= link_to "ブックマーク", bookmarks_path, class: "py-2" %>
-        <%= button_to "ログアウト",
-            destroy_user_session_path,
-            method: :delete,
-            data: { turbo: false },
-            class: "py-2 text-left" %>
-      <% else %>
-        <%= link_to "Googleでログイン",
-            user_google_oauth2_omniauth_authorize_path,
-            data: { turbo: false },
-            class: "py-2" %>
-      <% end %>
-    </nav>
+  <% if user_signed_in? %>
+
+    <% if current_user.guest? %>
+      <!-- ゲスト -->
+      <p class="py-2 text-gray-400 text-sm">
+        ゲストユーザーとして利用中
+      </p>
+      <%= link_to "Googleでログイン",
+          user_google_oauth2_omniauth_authorize_path,
+          data: { turbo: false },
+          class: "py-2" %>
+
+      <%= button_to "ログアウト",
+      destroy_user_session_path,
+      method: :delete,
+      data: { turbo: false },
+      class: "py-2 text-left" %>
+
+    <% else %>
+      <!-- 通常ユーザー -->
+      <p class="py-2 text-gray-400 text-sm">
+        Googleアカウントでログイン中
+      </p>
+      <%= link_to "ブックマーク", bookmarks_path, class: "py-2" %>
+      <%= button_to "ログアウト",
+          destroy_user_session_path,
+          method: :delete,
+          data: { turbo: false },
+          class: "py-2 text-left" %>
+    <% end %>
+
+  <% else %>
+    <!-- 未ログイン -->
+    <%= link_to "Googleでログイン",
+        user_google_oauth2_omniauth_authorize_path,
+        data: { turbo: false },
+        class: "py-2" %>
+    <%= button_to "ゲストでログイン",
+        guest_login_path,
+        method: :post,
+        class: "py-2" %>
+  <% end %>
+</nav>
 
   </div>
 
